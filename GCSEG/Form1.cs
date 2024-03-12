@@ -7,7 +7,7 @@ namespace GCSEG
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             List<bool> resultadosConversao = new List<bool>();
 
@@ -36,6 +36,8 @@ namespace GCSEG
                     Kmod2 = kmod2,
                     Kmod3 = kmod3,
                 };
+
+                await ShowProgressFormAsync();
 
                 var formCalculos = new Form2(parametros);
                 formCalculos.Show();
@@ -102,5 +104,18 @@ namespace GCSEG
 
             return valores;
         }
+
+        private Task ShowProgressFormAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+            var progressForm = new FormProgresso();
+
+            progressForm.FormClosed += (sender, args) => tcs.SetResult(true);
+            progressForm.Show();
+            progressForm.StartProgress();
+
+            return tcs.Task;
+        }
+
     }
 }

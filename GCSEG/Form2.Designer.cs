@@ -29,37 +29,129 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
             groupBox4 = new GroupBox();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            groupBox8 = new GroupBox();
+            label9 = new Label();
+            groupBox7 = new GroupBox();
+            label8 = new Label();
+            groupBox6 = new GroupBox();
+            label7 = new Label();
             groupBox5 = new GroupBox();
+            label1 = new Label();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
             tabPage4 = new TabPage();
             tabPage5 = new TabPage();
             tabPage6 = new TabPage();
-            groupBox6 = new GroupBox();
-            groupBox7 = new GroupBox();
-            groupBox8 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            groupBox9 = new GroupBox();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            label26 = new Label();
+            groupBox10 = new GroupBox();
+            label29 = new Label();
+            label30 = new Label();
+            groupBox11 = new GroupBox();
+            label27 = new Label();
+            label28 = new Label();
+            groupBox12 = new GroupBox();
+            label31 = new Label();
+            label32 = new Label();
+            label33 = new Label();
+            label34 = new Label();
+            label35 = new Label();
+            label36 = new Label();
+            label37 = new Label();
+            label38 = new Label();
+            label39 = new Label();
+            label40 = new Label();
+            groupBox13 = new GroupBox();
+            label41 = new Label();
+            label42 = new Label();
+            label43 = new Label();
+            label44 = new Label();
+            label45 = new Label();
+            label46 = new Label();
+            label47 = new Label();
+            label48 = new Label();
+            label49 = new Label();
+            label50 = new Label();
+            label51 = new Label();
+            label52 = new Label();
+            label53 = new Label();
+            groupBox14 = new GroupBox();
+            label54 = new Label();
+            label55 = new Label();
+            label56 = new Label();
+            label57 = new Label();
+            label58 = new Label();
+            label59 = new Label();
+            label60 = new Label();
+            label61 = new Label();
+            label62 = new Label();
+            label63 = new Label();
+            label64 = new Label();
+            label65 = new Label();
+            label66 = new Label();
+            groupBox15 = new GroupBox();
+            label78 = new Label();
+            label79 = new Label();
+            groupBox16 = new GroupBox();
+            label75 = new Label();
+            label76 = new Label();
+            label77 = new Label();
+            label80 = new Label();
+            label81 = new Label();
+            label67 = new Label();
+            label68 = new Label();
+            label69 = new Label();
+            label70 = new Label();
+            label71 = new Label();
             groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            groupBox8.SuspendLayout();
+            groupBox7.SuspendLayout();
+            groupBox6.SuspendLayout();
             groupBox5.SuspendLayout();
             tabPage2.SuspendLayout();
-            groupBox6.SuspendLayout();
-            groupBox7.SuspendLayout();
-            groupBox8.SuspendLayout();
+            tabPage3.SuspendLayout();
+            tabPage4.SuspendLayout();
+            tabPage5.SuspendLayout();
+            tabPage6.SuspendLayout();
+            groupBox9.SuspendLayout();
+            groupBox10.SuspendLayout();
+            groupBox11.SuspendLayout();
+            groupBox12.SuspendLayout();
+            groupBox13.SuspendLayout();
+            groupBox14.SuspendLayout();
+            groupBox15.SuspendLayout();
+            groupBox16.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
@@ -76,29 +168,87 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Parâmetros característicos da madeira segundo NBR 7190/97";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(279, 71);
+            label6.Name = "label6";
+            label6.Size = new Size(50, 20);
+            label6.TabIndex = 5;
+            label6.Text = "label6";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(279, 36);
+            label5.Name = "label5";
+            label5.Size = new Size(50, 20);
+            label5.TabIndex = 4;
+            label5.Text = "label5";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(6, 106);
+            label4.Name = "label4";
+            label4.Size = new Size(50, 20);
+            label4.TabIndex = 3;
+            label4.Text = "label4";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(6, 71);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 20);
+            label3.TabIndex = 2;
+            label3.Text = "label3";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 36);
+            label2.Name = "label2";
+            label2.Size = new Size(50, 20);
+            label2.TabIndex = 1;
+            label2.Text = "label2";
+            // 
             // groupBox2
             // 
-            groupBox2.Location = new Point(28, 39);
+            groupBox2.Controls.Add(label13);
+            groupBox2.Controls.Add(label12);
+            groupBox2.Controls.Add(label11);
+            groupBox2.Controls.Add(label10);
+            groupBox2.Location = new Point(6, 22);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(387, 56);
+            groupBox2.Size = new Size(387, 136);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Resistências de cálculo da madeira";
             // 
             // groupBox3
             // 
-            groupBox3.Location = new Point(28, 119);
+            groupBox3.Controls.Add(label16);
+            groupBox3.Controls.Add(label15);
+            groupBox3.Controls.Add(label14);
+            groupBox3.Location = new Point(441, 22);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(387, 38);
+            groupBox3.Size = new Size(387, 136);
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             groupBox3.Text = "Condições de carregamento na estrutura (NR-18)";
             // 
             // groupBox4
             // 
-            groupBox4.Location = new Point(28, 163);
+            groupBox4.Controls.Add(label25);
+            groupBox4.Controls.Add(label26);
+            groupBox4.Controls.Add(label24);
+            groupBox4.Controls.Add(label23);
+            groupBox4.Controls.Add(label22);
+            groupBox4.Controls.Add(label21);
+            groupBox4.Location = new Point(441, 164);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(387, 51);
+            groupBox4.Size = new Size(387, 243);
             groupBox4.TabIndex = 3;
             groupBox4.TabStop = false;
             groupBox4.Text = "Cálculo dos esforços solicitantes nas travessas";
@@ -133,6 +283,63 @@
             tabPage1.Text = "Parâmetros utilizados";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // groupBox8
+            // 
+            groupBox8.Controls.Add(label9);
+            groupBox8.Location = new Point(6, 427);
+            groupBox8.Name = "groupBox8";
+            groupBox8.Size = new Size(496, 77);
+            groupBox8.TabIndex = 3;
+            groupBox8.TabStop = false;
+            groupBox8.Text = "Fator de qualidade da madeira";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(6, 39);
+            label9.Name = "label9";
+            label9.Size = new Size(50, 20);
+            label9.TabIndex = 8;
+            label9.Text = "label9";
+            // 
+            // groupBox7
+            // 
+            groupBox7.Controls.Add(label8);
+            groupBox7.Location = new Point(6, 344);
+            groupBox7.Name = "groupBox7";
+            groupBox7.Size = new Size(496, 77);
+            groupBox7.TabIndex = 2;
+            groupBox7.TabStop = false;
+            groupBox7.Text = "Fator de umidade";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(6, 36);
+            label8.Name = "label8";
+            label8.Size = new Size(50, 20);
+            label8.TabIndex = 7;
+            label8.Text = "label8";
+            // 
+            // groupBox6
+            // 
+            groupBox6.Controls.Add(label7);
+            groupBox6.Location = new Point(6, 250);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(496, 77);
+            groupBox6.TabIndex = 1;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Fator de carregamento";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(6, 36);
+            label7.Name = "label7";
+            label7.Size = new Size(50, 20);
+            label7.TabIndex = 6;
+            label7.Text = "label7";
+            // 
             // groupBox5
             // 
             groupBox5.Controls.Add(label1);
@@ -143,8 +350,20 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "Classe de Madeira utilizada";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 20);
+            label1.TabIndex = 0;
+            label1.Text = "label1";
+            // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(groupBox11);
+            tabPage2.Controls.Add(groupBox10);
+            tabPage2.Controls.Add(groupBox9);
             tabPage2.Controls.Add(groupBox2);
             tabPage2.Controls.Add(groupBox4);
             tabPage2.Controls.Add(groupBox3);
@@ -158,6 +377,8 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(groupBox13);
+            tabPage3.Controls.Add(groupBox12);
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
@@ -168,6 +389,7 @@
             // 
             // tabPage4
             // 
+            tabPage4.Controls.Add(groupBox14);
             tabPage4.Location = new Point(4, 29);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
@@ -178,6 +400,7 @@
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(groupBox15);
             tabPage5.Location = new Point(4, 29);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
@@ -188,6 +411,7 @@
             // 
             // tabPage6
             // 
+            tabPage6.Controls.Add(groupBox16);
             tabPage6.Location = new Point(4, 29);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
@@ -196,116 +420,755 @@
             tabPage6.Text = "Dimensionamento dos chumbadores";
             tabPage6.UseVisualStyleBackColor = true;
             // 
-            // groupBox6
+            // label10
             // 
-            groupBox6.Controls.Add(label7);
-            groupBox6.Location = new Point(6, 250);
-            groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(496, 77);
-            groupBox6.TabIndex = 1;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "Fator de carregamento";
+            label10.AutoSize = true;
+            label10.Location = new Point(6, 32);
+            label10.Name = "label10";
+            label10.Size = new Size(58, 20);
+            label10.TabIndex = 0;
+            label10.Text = "label10";
             // 
-            // groupBox7
+            // label11
             // 
-            groupBox7.Controls.Add(label8);
-            groupBox7.Location = new Point(6, 344);
-            groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(496, 77);
-            groupBox7.TabIndex = 2;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "Fator de umidade";
+            label11.AutoSize = true;
+            label11.Location = new Point(6, 90);
+            label11.Name = "label11";
+            label11.Size = new Size(58, 20);
+            label11.TabIndex = 1;
+            label11.Text = "label11";
             // 
-            // groupBox8
+            // label12
             // 
-            groupBox8.Controls.Add(label9);
-            groupBox8.Location = new Point(6, 427);
-            groupBox8.Name = "groupBox8";
-            groupBox8.Size = new Size(496, 77);
-            groupBox8.TabIndex = 3;
-            groupBox8.TabStop = false;
-            groupBox8.Text = "Fator de qualidade da madeira";
+            label12.AutoSize = true;
+            label12.Location = new Point(189, 32);
+            label12.Name = "label12";
+            label12.Size = new Size(58, 20);
+            label12.TabIndex = 2;
+            label12.Text = "label12";
             // 
-            // label1
+            // label13
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            label13.AutoSize = true;
+            label13.Location = new Point(189, 90);
+            label13.Name = "label13";
+            label13.Size = new Size(58, 20);
+            label13.TabIndex = 3;
+            label13.Text = "label13";
             // 
-            // label2
+            // label14
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 36);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
+            label14.AutoSize = true;
+            label14.Location = new Point(6, 32);
+            label14.Name = "label14";
+            label14.Size = new Size(308, 20);
+            label14.TabIndex = 4;
+            label14.Text = "Carregamento na travessa superior: 90 Kgf/m";
             // 
-            // label3
+            // label15
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(6, 71);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
+            label15.AutoSize = true;
+            label15.Location = new Point(6, 63);
+            label15.Name = "label15";
+            label15.Size = new Size(296, 20);
+            label15.TabIndex = 5;
+            label15.Text = "Carregamento na travessa media: 66 Kgf/m";
             // 
-            // label4
+            // label16
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 106);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
+            label16.AutoSize = true;
+            label16.Location = new Point(6, 95);
+            label16.Name = "label16";
+            label16.Size = new Size(246, 20);
+            label16.TabIndex = 6;
+            label16.Text = "Carregamento no rodapé: 22 Kgf/m";
             // 
-            // label5
+            // groupBox9
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(279, 36);
-            label5.Name = "label5";
-            label5.Size = new Size(50, 20);
-            label5.TabIndex = 4;
-            label5.Text = "label5";
+            groupBox9.Controls.Add(label17);
+            groupBox9.Controls.Add(label18);
+            groupBox9.Controls.Add(label19);
+            groupBox9.Controls.Add(label20);
+            groupBox9.Location = new Point(6, 164);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Size = new Size(387, 171);
+            groupBox9.TabIndex = 4;
+            groupBox9.TabStop = false;
+            groupBox9.Text = "Geometria do guarda-corpo";
             // 
-            // label6
+            // label17
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(279, 71);
-            label6.Name = "label6";
-            label6.Size = new Size(50, 20);
-            label6.TabIndex = 5;
-            label6.Text = "label6";
+            label17.AutoSize = true;
+            label17.Location = new Point(6, 138);
+            label17.Name = "label17";
+            label17.Size = new Size(58, 20);
+            label17.TabIndex = 3;
+            label17.Text = "label17";
             // 
-            // label7
+            // label18
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(6, 36);
-            label7.Name = "label7";
-            label7.Size = new Size(50, 20);
-            label7.TabIndex = 6;
-            label7.Text = "label7";
+            label18.AutoSize = true;
+            label18.Location = new Point(6, 100);
+            label18.Name = "label18";
+            label18.Size = new Size(276, 20);
+            label18.TabIndex = 2;
+            label18.Text = "Altura no rodapé segundo NR-18: 15 cm";
             // 
-            // label8
+            // label19
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 36);
-            label8.Name = "label8";
-            label8.Size = new Size(50, 20);
-            label8.TabIndex = 7;
-            label8.Text = "label8";
+            label19.AutoSize = true;
+            label19.Location = new Point(6, 64);
+            label19.Name = "label19";
+            label19.Size = new Size(327, 20);
+            label19.TabIndex = 1;
+            label19.Text = "Altura da travessa media segundo NR-18: 70 cm";
             // 
-            // label9
+            // label20
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(6, 39);
-            label9.Name = "label9";
-            label9.Size = new Size(50, 20);
-            label9.TabIndex = 8;
-            label9.Text = "label9";
+            label20.AutoSize = true;
+            label20.Location = new Point(6, 32);
+            label20.Name = "label20";
+            label20.Size = new Size(355, 20);
+            label20.TabIndex = 0;
+            label20.Text = "Altura da travessa superior segundo NR-18:   120 cm";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(6, 32);
+            label21.Name = "label21";
+            label21.Size = new Size(58, 20);
+            label21.TabIndex = 4;
+            label21.Text = "label21";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(6, 64);
+            label22.Name = "label22";
+            label22.Size = new Size(58, 20);
+            label22.TabIndex = 5;
+            label22.Text = "label22";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(6, 111);
+            label23.Name = "label23";
+            label23.Size = new Size(58, 20);
+            label23.TabIndex = 6;
+            label23.Text = "label23";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(6, 138);
+            label24.Name = "label24";
+            label24.Size = new Size(58, 20);
+            label24.TabIndex = 7;
+            label24.Text = "label24";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(6, 209);
+            label25.Name = "label25";
+            label25.Size = new Size(58, 20);
+            label25.TabIndex = 9;
+            label25.Text = "label25";
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(6, 182);
+            label26.Name = "label26";
+            label26.Size = new Size(58, 20);
+            label26.TabIndex = 8;
+            label26.Text = "label26";
+            // 
+            // groupBox10
+            // 
+            groupBox10.Controls.Add(label29);
+            groupBox10.Controls.Add(label30);
+            groupBox10.Location = new Point(6, 346);
+            groupBox10.Name = "groupBox10";
+            groupBox10.Size = new Size(387, 101);
+            groupBox10.TabIndex = 4;
+            groupBox10.TabStop = false;
+            groupBox10.Text = "Cálculo dos esforços solicitantes nos montantes";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(6, 64);
+            label29.Name = "label29";
+            label29.Size = new Size(58, 20);
+            label29.TabIndex = 1;
+            label29.Text = "label29";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(6, 32);
+            label30.Name = "label30";
+            label30.Size = new Size(58, 20);
+            label30.TabIndex = 0;
+            label30.Text = "label30";
+            // 
+            // groupBox11
+            // 
+            groupBox11.Controls.Add(label27);
+            groupBox11.Controls.Add(label28);
+            groupBox11.Location = new Point(441, 413);
+            groupBox11.Name = "groupBox11";
+            groupBox11.Size = new Size(387, 109);
+            groupBox11.TabIndex = 5;
+            groupBox11.TabStop = false;
+            groupBox11.Text = "Seções geométricas das peças em centimetros";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Location = new Point(6, 65);
+            label27.Name = "label27";
+            label27.Size = new Size(58, 20);
+            label27.TabIndex = 1;
+            label27.Text = "label27";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(6, 32);
+            label28.Name = "label28";
+            label28.Size = new Size(58, 20);
+            label28.TabIndex = 0;
+            label28.Text = "label28";
+            // 
+            // groupBox12
+            // 
+            groupBox12.Controls.Add(label36);
+            groupBox12.Controls.Add(label37);
+            groupBox12.Controls.Add(label38);
+            groupBox12.Controls.Add(label39);
+            groupBox12.Controls.Add(label40);
+            groupBox12.Controls.Add(label35);
+            groupBox12.Controls.Add(label34);
+            groupBox12.Controls.Add(label33);
+            groupBox12.Controls.Add(label32);
+            groupBox12.Controls.Add(label31);
+            groupBox12.Location = new Point(6, 13);
+            groupBox12.Name = "groupBox12";
+            groupBox12.Size = new Size(374, 506);
+            groupBox12.TabIndex = 0;
+            groupBox12.TabStop = false;
+            groupBox12.Text = "Parâmetros geométricos";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Location = new Point(6, 34);
+            label31.Name = "label31";
+            label31.Size = new Size(58, 20);
+            label31.TabIndex = 0;
+            label31.Text = "label31";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Location = new Point(6, 77);
+            label32.Name = "label32";
+            label32.Size = new Size(58, 20);
+            label32.TabIndex = 1;
+            label32.Text = "label32";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Location = new Point(6, 121);
+            label33.Name = "label33";
+            label33.Size = new Size(58, 20);
+            label33.TabIndex = 2;
+            label33.Text = "label33";
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Location = new Point(6, 163);
+            label34.Name = "label34";
+            label34.Size = new Size(58, 20);
+            label34.TabIndex = 3;
+            label34.Text = "label34";
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Location = new Point(6, 209);
+            label35.Name = "label35";
+            label35.Size = new Size(58, 20);
+            label35.TabIndex = 4;
+            label35.Text = "label35";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Location = new Point(6, 457);
+            label36.Name = "label36";
+            label36.Size = new Size(58, 20);
+            label36.TabIndex = 9;
+            label36.Text = "label36";
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Location = new Point(6, 411);
+            label37.Name = "label37";
+            label37.Size = new Size(58, 20);
+            label37.TabIndex = 8;
+            label37.Text = "label37";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Location = new Point(6, 369);
+            label38.Name = "label38";
+            label38.Size = new Size(58, 20);
+            label38.TabIndex = 7;
+            label38.Text = "label38";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Location = new Point(6, 325);
+            label39.Name = "label39";
+            label39.Size = new Size(58, 20);
+            label39.TabIndex = 6;
+            label39.Text = "label39";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Location = new Point(6, 282);
+            label40.Name = "label40";
+            label40.Size = new Size(58, 20);
+            label40.TabIndex = 5;
+            label40.Text = "label40";
+            // 
+            // groupBox13
+            // 
+            groupBox13.Controls.Add(label51);
+            groupBox13.Controls.Add(label52);
+            groupBox13.Controls.Add(label53);
+            groupBox13.Controls.Add(label41);
+            groupBox13.Controls.Add(label42);
+            groupBox13.Controls.Add(label43);
+            groupBox13.Controls.Add(label44);
+            groupBox13.Controls.Add(label45);
+            groupBox13.Controls.Add(label46);
+            groupBox13.Controls.Add(label47);
+            groupBox13.Controls.Add(label48);
+            groupBox13.Controls.Add(label49);
+            groupBox13.Controls.Add(label50);
+            groupBox13.Location = new Point(473, 13);
+            groupBox13.Name = "groupBox13";
+            groupBox13.Size = new Size(374, 506);
+            groupBox13.TabIndex = 10;
+            groupBox13.TabStop = false;
+            groupBox13.Text = "Tensões solicitantes de cálculo";
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Location = new Point(6, 349);
+            label41.Name = "label41";
+            label41.Size = new Size(58, 20);
+            label41.TabIndex = 9;
+            label41.Text = "label41";
+            label41.Click += label41_Click;
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Location = new Point(6, 291);
+            label42.Name = "label42";
+            label42.Size = new Size(58, 20);
+            label42.TabIndex = 8;
+            label42.Text = "label42";
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Location = new Point(6, 239);
+            label43.Name = "label43";
+            label43.Size = new Size(58, 20);
+            label43.TabIndex = 7;
+            label43.Text = "label43";
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.Location = new Point(6, 209);
+            label44.Name = "label44";
+            label44.Size = new Size(58, 20);
+            label44.TabIndex = 6;
+            label44.Text = "label44";
+            // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Location = new Point(6, 179);
+            label45.Name = "label45";
+            label45.Size = new Size(58, 20);
+            label45.TabIndex = 5;
+            label45.Text = "label45";
+            // 
+            // label46
+            // 
+            label46.AutoSize = true;
+            label46.Location = new Point(6, 147);
+            label46.Name = "label46";
+            label46.Size = new Size(58, 20);
+            label46.TabIndex = 4;
+            label46.Text = "label46";
+            // 
+            // label47
+            // 
+            label47.AutoSize = true;
+            label47.Location = new Point(6, 118);
+            label47.Name = "label47";
+            label47.Size = new Size(58, 20);
+            label47.TabIndex = 3;
+            label47.Text = "label47";
+            // 
+            // label48
+            // 
+            label48.AutoSize = true;
+            label48.Location = new Point(6, 91);
+            label48.Name = "label48";
+            label48.Size = new Size(58, 20);
+            label48.TabIndex = 2;
+            label48.Text = "label48";
+            // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.Location = new Point(6, 62);
+            label49.Name = "label49";
+            label49.Size = new Size(58, 20);
+            label49.TabIndex = 1;
+            label49.Text = "label49";
+            // 
+            // label50
+            // 
+            label50.AutoSize = true;
+            label50.Location = new Point(6, 34);
+            label50.Name = "label50";
+            label50.Size = new Size(58, 20);
+            label50.TabIndex = 0;
+            label50.Text = "label50";
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.Location = new Point(6, 430);
+            label51.Name = "label51";
+            label51.Size = new Size(58, 20);
+            label51.TabIndex = 12;
+            label51.Text = "label51";
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.Location = new Point(6, 402);
+            label52.Name = "label52";
+            label52.Size = new Size(58, 20);
+            label52.TabIndex = 11;
+            label52.Text = "label52";
+            // 
+            // label53
+            // 
+            label53.AutoSize = true;
+            label53.Location = new Point(6, 375);
+            label53.Name = "label53";
+            label53.Size = new Size(58, 20);
+            label53.TabIndex = 10;
+            label53.Text = "label53";
+            // 
+            // groupBox14
+            // 
+            groupBox14.Controls.Add(label66);
+            groupBox14.Controls.Add(label63);
+            groupBox14.Controls.Add(label64);
+            groupBox14.Controls.Add(label65);
+            groupBox14.Controls.Add(label60);
+            groupBox14.Controls.Add(label61);
+            groupBox14.Controls.Add(label62);
+            groupBox14.Controls.Add(label57);
+            groupBox14.Controls.Add(label58);
+            groupBox14.Controls.Add(label59);
+            groupBox14.Controls.Add(label56);
+            groupBox14.Controls.Add(label55);
+            groupBox14.Controls.Add(label54);
+            groupBox14.Location = new Point(18, 18);
+            groupBox14.Name = "groupBox14";
+            groupBox14.Size = new Size(881, 440);
+            groupBox14.TabIndex = 0;
+            groupBox14.TabStop = false;
+            groupBox14.Text = "VERIFICAÇÃO PARA ESTADO LIMITE ULTIMO  (ELU)";
+            // 
+            // label54
+            // 
+            label54.AutoSize = true;
+            label54.Location = new Point(17, 35);
+            label54.Name = "label54";
+            label54.Size = new Size(58, 20);
+            label54.TabIndex = 0;
+            label54.Text = "label54";
+            // 
+            // label55
+            // 
+            label55.AutoSize = true;
+            label55.Location = new Point(17, 65);
+            label55.Name = "label55";
+            label55.Size = new Size(58, 20);
+            label55.TabIndex = 1;
+            label55.Text = "label55";
+            // 
+            // label56
+            // 
+            label56.AutoSize = true;
+            label56.Location = new Point(17, 96);
+            label56.Name = "label56";
+            label56.Size = new Size(58, 20);
+            label56.TabIndex = 2;
+            label56.Text = "label56";
+            // 
+            // label57
+            // 
+            label57.AutoSize = true;
+            label57.Location = new Point(17, 205);
+            label57.Name = "label57";
+            label57.Size = new Size(58, 20);
+            label57.TabIndex = 5;
+            label57.Text = "label57";
+            // 
+            // label58
+            // 
+            label58.AutoSize = true;
+            label58.Location = new Point(17, 174);
+            label58.Name = "label58";
+            label58.Size = new Size(58, 20);
+            label58.TabIndex = 4;
+            label58.Text = "label58";
+            // 
+            // label59
+            // 
+            label59.AutoSize = true;
+            label59.Location = new Point(17, 144);
+            label59.Name = "label59";
+            label59.Size = new Size(58, 20);
+            label59.TabIndex = 3;
+            label59.Text = "label59";
+            // 
+            // label60
+            // 
+            label60.AutoSize = true;
+            label60.Location = new Point(17, 326);
+            label60.Name = "label60";
+            label60.Size = new Size(58, 20);
+            label60.TabIndex = 8;
+            label60.Text = "label60";
+            // 
+            // label61
+            // 
+            label61.AutoSize = true;
+            label61.Location = new Point(17, 295);
+            label61.Name = "label61";
+            label61.Size = new Size(58, 20);
+            label61.TabIndex = 7;
+            label61.Text = "label61";
+            // 
+            // label62
+            // 
+            label62.AutoSize = true;
+            label62.Location = new Point(17, 265);
+            label62.Name = "label62";
+            label62.Size = new Size(58, 20);
+            label62.TabIndex = 6;
+            label62.Text = "label62";
+            // 
+            // label63
+            // 
+            label63.AutoSize = true;
+            label63.Location = new Point(463, 96);
+            label63.Name = "label63";
+            label63.Size = new Size(58, 20);
+            label63.TabIndex = 11;
+            label63.Text = "label63";
+            // 
+            // label64
+            // 
+            label64.AutoSize = true;
+            label64.Location = new Point(463, 65);
+            label64.Name = "label64";
+            label64.Size = new Size(58, 20);
+            label64.TabIndex = 10;
+            label64.Text = "label64";
+            // 
+            // label65
+            // 
+            label65.AutoSize = true;
+            label65.Location = new Point(463, 35);
+            label65.Name = "label65";
+            label65.Size = new Size(58, 20);
+            label65.TabIndex = 9;
+            label65.Text = "label65";
+            // 
+            // label66
+            // 
+            label66.AutoSize = true;
+            label66.Location = new Point(463, 174);
+            label66.Name = "label66";
+            label66.Size = new Size(58, 20);
+            label66.TabIndex = 12;
+            label66.Text = "label66";
+            // 
+            // groupBox15
+            // 
+            groupBox15.Controls.Add(label78);
+            groupBox15.Controls.Add(label79);
+            groupBox15.Location = new Point(15, 17);
+            groupBox15.Name = "groupBox15";
+            groupBox15.Size = new Size(881, 158);
+            groupBox15.TabIndex = 1;
+            groupBox15.TabStop = false;
+            groupBox15.Text = "VERIFICAÇÃO PARA ESTADO LIMITE SERVIÇO  (ELS)";
+            // 
+            // label78
+            // 
+            label78.AutoSize = true;
+            label78.Location = new Point(17, 103);
+            label78.Name = "label78";
+            label78.Size = new Size(58, 20);
+            label78.TabIndex = 1;
+            label78.Text = "label78";
+            // 
+            // label79
+            // 
+            label79.AutoSize = true;
+            label79.Location = new Point(17, 35);
+            label79.Name = "label79";
+            label79.Size = new Size(58, 20);
+            label79.TabIndex = 0;
+            label79.Text = "label79";
+            // 
+            // groupBox16
+            // 
+            groupBox16.Controls.Add(label67);
+            groupBox16.Controls.Add(label68);
+            groupBox16.Controls.Add(label69);
+            groupBox16.Controls.Add(label70);
+            groupBox16.Controls.Add(label71);
+            groupBox16.Controls.Add(label75);
+            groupBox16.Controls.Add(label76);
+            groupBox16.Controls.Add(label77);
+            groupBox16.Controls.Add(label80);
+            groupBox16.Controls.Add(label81);
+            groupBox16.Location = new Point(6, 18);
+            groupBox16.Name = "groupBox16";
+            groupBox16.Size = new Size(881, 440);
+            groupBox16.TabIndex = 1;
+            groupBox16.TabStop = false;
+            groupBox16.Text = "VERIFICAÇÃO PARA ESTADO LIMITE ULTIMO  (ELU)";
+            // 
+            // label75
+            // 
+            label75.AutoSize = true;
+            label75.Location = new Point(17, 156);
+            label75.Name = "label75";
+            label75.Size = new Size(58, 20);
+            label75.TabIndex = 4;
+            label75.Text = "label75";
+            // 
+            // label76
+            // 
+            label76.AutoSize = true;
+            label76.Location = new Point(17, 126);
+            label76.Name = "label76";
+            label76.Size = new Size(58, 20);
+            label76.TabIndex = 3;
+            label76.Text = "label76";
+            // 
+            // label77
+            // 
+            label77.AutoSize = true;
+            label77.Location = new Point(17, 96);
+            label77.Name = "label77";
+            label77.Size = new Size(58, 20);
+            label77.TabIndex = 2;
+            label77.Text = "label77";
+            // 
+            // label80
+            // 
+            label80.AutoSize = true;
+            label80.Location = new Point(17, 65);
+            label80.Name = "label80";
+            label80.Size = new Size(58, 20);
+            label80.TabIndex = 1;
+            label80.Text = "label80";
+            // 
+            // label81
+            // 
+            label81.AutoSize = true;
+            label81.Location = new Point(17, 35);
+            label81.Name = "label81";
+            label81.Size = new Size(58, 20);
+            label81.TabIndex = 0;
+            label81.Text = "label81";
+            // 
+            // label67
+            // 
+            label67.AutoSize = true;
+            label67.Location = new Point(17, 353);
+            label67.Name = "label67";
+            label67.Size = new Size(58, 20);
+            label67.TabIndex = 9;
+            label67.Text = "label67";
+            // 
+            // label68
+            // 
+            label68.AutoSize = true;
+            label68.Location = new Point(17, 323);
+            label68.Name = "label68";
+            label68.Size = new Size(58, 20);
+            label68.TabIndex = 8;
+            label68.Text = "label68";
+            // 
+            // label69
+            // 
+            label69.AutoSize = true;
+            label69.Location = new Point(17, 293);
+            label69.Name = "label69";
+            label69.Size = new Size(58, 20);
+            label69.TabIndex = 7;
+            label69.Text = "label69";
+            // 
+            // label70
+            // 
+            label70.AutoSize = true;
+            label70.Location = new Point(17, 262);
+            label70.Name = "label70";
+            label70.Size = new Size(58, 20);
+            label70.TabIndex = 6;
+            label70.Text = "label70";
+            // 
+            // label71
+            // 
+            label71.AutoSize = true;
+            label71.Location = new Point(17, 232);
+            label71.Name = "label71";
+            label71.Size = new Size(58, 20);
+            label71.TabIndex = 5;
+            label71.Text = "label71";
             // 
             // Form2
             // 
@@ -318,17 +1181,43 @@
             Load += Form2_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            groupBox8.ResumeLayout(false);
+            groupBox8.PerformLayout();
+            groupBox7.ResumeLayout(false);
+            groupBox7.PerformLayout();
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
             tabPage2.ResumeLayout(false);
-            groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
-            groupBox8.ResumeLayout(false);
-            groupBox8.PerformLayout();
+            tabPage3.ResumeLayout(false);
+            tabPage4.ResumeLayout(false);
+            tabPage5.ResumeLayout(false);
+            tabPage6.ResumeLayout(false);
+            groupBox9.ResumeLayout(false);
+            groupBox9.PerformLayout();
+            groupBox10.ResumeLayout(false);
+            groupBox10.PerformLayout();
+            groupBox11.ResumeLayout(false);
+            groupBox11.PerformLayout();
+            groupBox12.ResumeLayout(false);
+            groupBox12.PerformLayout();
+            groupBox13.ResumeLayout(false);
+            groupBox13.PerformLayout();
+            groupBox14.ResumeLayout(false);
+            groupBox14.PerformLayout();
+            groupBox15.ResumeLayout(false);
+            groupBox15.PerformLayout();
+            groupBox16.ResumeLayout(false);
+            groupBox16.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -358,5 +1247,82 @@
         private Label label8;
         private Label label7;
         private Label label1;
+        private Label label13;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label16;
+        private Label label15;
+        private Label label14;
+        private Label label25;
+        private Label label26;
+        private Label label24;
+        private Label label23;
+        private Label label22;
+        private Label label21;
+        private GroupBox groupBox11;
+        private Label label27;
+        private Label label28;
+        private GroupBox groupBox10;
+        private Label label29;
+        private Label label30;
+        private GroupBox groupBox9;
+        private Label label17;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private GroupBox groupBox12;
+        private GroupBox groupBox13;
+        private Label label51;
+        private Label label52;
+        private Label label53;
+        private Label label41;
+        private Label label42;
+        private Label label43;
+        private Label label44;
+        private Label label45;
+        private Label label46;
+        private Label label47;
+        private Label label48;
+        private Label label49;
+        private Label label50;
+        private Label label36;
+        private Label label37;
+        private Label label38;
+        private Label label39;
+        private Label label40;
+        private Label label35;
+        private Label label34;
+        private Label label33;
+        private Label label32;
+        private Label label31;
+        private GroupBox groupBox14;
+        private Label label66;
+        private Label label63;
+        private Label label64;
+        private Label label65;
+        private Label label60;
+        private Label label61;
+        private Label label62;
+        private Label label57;
+        private Label label58;
+        private Label label59;
+        private Label label56;
+        private Label label55;
+        private Label label54;
+        private GroupBox groupBox15;
+        private Label label78;
+        private Label label79;
+        private GroupBox groupBox16;
+        private Label label67;
+        private Label label68;
+        private Label label69;
+        private Label label70;
+        private Label label71;
+        private Label label75;
+        private Label label76;
+        private Label label77;
+        private Label label80;
+        private Label label81;
     }
 }
