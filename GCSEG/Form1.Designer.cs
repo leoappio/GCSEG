@@ -468,7 +468,6 @@
             label1.Size = new Size(496, 21);
             label1.TabIndex = 1;
             label1.Text = "Valores caracteristicos de resistência das madeiras segundo NBR 7190";
-            label1.Click += label1_Click;
             // 
             // groupBox1
             // 
@@ -570,7 +569,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "C-20", "C-25 - Pinus Elliotti , Araucária", "C-30 - Pinus Taeda", "D-20 - Eucalipto grandis", "D-30 - Eucalipto saligna, Eucalipto tereticornis", "D-40", "D-60" });
+            comboBox1.Items.AddRange(new object[] { "C-20", "C-25 - Pinus Elliotti, Araucária", "C-30 - Pinus Taeda", "D-20 - Eucalipto grandis", "D-30 - Eucalipto saligna, Eucalipto tereticornis", "D-40", "D-60" });
             comboBox1.Location = new Point(6, 30);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(335, 29);
@@ -1020,6 +1019,7 @@
             button1.TabIndex = 11;
             button1.Text = "Calcular";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // groupBox14
             // 
@@ -1067,7 +1067,6 @@
             label55.Size = new Size(355, 21);
             label55.TabIndex = 7;
             label55.Text = "Limite de escoamento do chumbador em KN/cm²:";
-            label55.Click += label55_Click;
             // 
             // textBox16
             // 
