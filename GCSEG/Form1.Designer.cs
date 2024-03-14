@@ -89,6 +89,7 @@
             label39 = new Label();
             label40 = new Label();
             tabPage4 = new TabPage();
+            pictureBox1 = new PictureBox();
             groupBox12 = new GroupBox();
             textBox5 = new TextBox();
             label43 = new Label();
@@ -125,7 +126,6 @@
             textBox16 = new TextBox();
             label54 = new Label();
             tabControl1 = new TabControl();
-            pictureBox1 = new PictureBox();
             tabPage2.SuspendLayout();
             groupBox7.SuspendLayout();
             groupBox6.SuspendLayout();
@@ -142,12 +142,12 @@
             groupBox10.SuspendLayout();
             groupBox11.SuspendLayout();
             tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox12.SuspendLayout();
             groupBox13.SuspendLayout();
             tabPage5.SuspendLayout();
             groupBox14.SuspendLayout();
             tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // tabPage2
@@ -163,7 +163,7 @@
             tabPage2.Location = new Point(4, 30);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(934, 570);
+            tabPage2.Size = new Size(1089, 578);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Valores Referência";
             tabPage2.UseVisualStyleBackColor = true;
@@ -765,6 +765,16 @@
             tabPage4.Text = "Geometria";
             tabPage4.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.imagem;
+            pictureBox1.Location = new Point(636, 46);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(401, 384);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            // 
             // groupBox12
             // 
             groupBox12.Controls.Add(textBox5);
@@ -776,7 +786,7 @@
             groupBox12.Size = new Size(582, 146);
             groupBox12.TabIndex = 9;
             groupBox12.TabStop = false;
-            groupBox12.Text = "Dimensionamento de guarda corpo de madeira nova NR-18";
+            groupBox12.Text = "Geometria Global";
             // 
             // textBox5
             // 
@@ -790,9 +800,9 @@
             label43.AutoSize = true;
             label43.Location = new Point(18, 81);
             label43.Name = "label43";
-            label43.Size = new Size(395, 21);
+            label43.Size = new Size(364, 21);
             label43.TabIndex = 2;
-            label43.Text = "E2 - Distância de deslocamento da mão francesa em cm";
+            label43.Text = "Distância de deslocamento da mão francesa em cm";
             // 
             // textBox4
             // 
@@ -806,9 +816,9 @@
             label42.AutoSize = true;
             label42.Location = new Point(18, 25);
             label42.Name = "label42";
-            label42.Size = new Size(323, 21);
+            label42.Size = new Size(292, 21);
             label42.TabIndex = 0;
-            label42.Text = "E1 - Distância efetiva entre montantes em cm";
+            label42.Text = "Distância efetiva entre montantes em cm";
             // 
             // groupBox13
             // 
@@ -1098,16 +1108,6 @@
             tabControl1.Size = new Size(1097, 612);
             tabControl1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.imagem;
-            pictureBox1.Location = new Point(636, 46);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(401, 384);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1143,6 +1143,7 @@
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();
             tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox12.ResumeLayout(false);
             groupBox12.PerformLayout();
             groupBox13.ResumeLayout(false);
@@ -1151,7 +1152,6 @@
             groupBox14.ResumeLayout(false);
             groupBox14.PerformLayout();
             tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
