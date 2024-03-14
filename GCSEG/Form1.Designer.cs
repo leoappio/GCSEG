@@ -125,6 +125,7 @@
             textBox16 = new TextBox();
             label54 = new Label();
             tabControl1 = new TabControl();
+            pictureBox1 = new PictureBox();
             tabPage2.SuspendLayout();
             groupBox7.SuspendLayout();
             groupBox6.SuspendLayout();
@@ -146,6 +147,7 @@
             tabPage5.SuspendLayout();
             groupBox14.SuspendLayout();
             tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // tabPage2
@@ -524,7 +526,7 @@
             tabPage1.Location = new Point(4, 30);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(934, 570);
+            tabPage1.Size = new Size(1089, 578);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Calcular";
             tabPage1.UseVisualStyleBackColor = true;
@@ -538,7 +540,7 @@
             tabControl2.Location = new Point(6, 6);
             tabControl2.Name = "tabControl2";
             tabControl2.SelectedIndex = 0;
-            tabControl2.Size = new Size(922, 564);
+            tabControl2.Size = new Size(1070, 564);
             tabControl2.TabIndex = 12;
             // 
             // tabPage3
@@ -550,7 +552,7 @@
             tabPage3.Location = new Point(4, 30);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(914, 530);
+            tabPage3.Size = new Size(1062, 530);
             tabPage3.TabIndex = 0;
             tabPage3.Text = "Material";
             tabPage3.UseVisualStyleBackColor = true;
@@ -752,12 +754,13 @@
             // 
             // tabPage4
             // 
+            tabPage4.Controls.Add(pictureBox1);
             tabPage4.Controls.Add(groupBox12);
             tabPage4.Controls.Add(groupBox13);
             tabPage4.Location = new Point(4, 30);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(914, 530);
+            tabPage4.Size = new Size(1062, 530);
             tabPage4.TabIndex = 1;
             tabPage4.Text = "Geometria";
             tabPage4.UseVisualStyleBackColor = true;
@@ -768,16 +771,16 @@
             groupBox12.Controls.Add(label43);
             groupBox12.Controls.Add(textBox4);
             groupBox12.Controls.Add(label42);
-            groupBox12.Location = new Point(30, 37);
+            groupBox12.Location = new Point(30, 6);
             groupBox12.Name = "groupBox12";
-            groupBox12.Size = new Size(809, 97);
+            groupBox12.Size = new Size(582, 146);
             groupBox12.TabIndex = 9;
             groupBox12.TabStop = false;
             groupBox12.Text = "Dimensionamento de guarda corpo de madeira nova NR-18";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(366, 49);
+            textBox5.Location = new Point(18, 105);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(149, 29);
             textBox5.TabIndex = 3;
@@ -785,11 +788,11 @@
             // label43
             // 
             label43.AutoSize = true;
-            label43.Location = new Point(366, 25);
+            label43.Location = new Point(18, 81);
             label43.Name = "label43";
-            label43.Size = new Size(364, 21);
+            label43.Size = new Size(395, 21);
             label43.TabIndex = 2;
-            label43.Text = "Distância de deslocamento da mão francesa em cm";
+            label43.Text = "E2 - Distância de deslocamento da mão francesa em cm";
             // 
             // textBox4
             // 
@@ -803,9 +806,9 @@
             label42.AutoSize = true;
             label42.Location = new Point(18, 25);
             label42.Name = "label42";
-            label42.Size = new Size(292, 21);
+            label42.Size = new Size(323, 21);
             label42.TabIndex = 0;
-            label42.Text = "Distância efetiva entre montantes em cm";
+            label42.Text = "E1 - Distância efetiva entre montantes em cm";
             // 
             // groupBox13
             // 
@@ -829,16 +832,16 @@
             groupBox13.Controls.Add(label44);
             groupBox13.Controls.Add(textBox7);
             groupBox13.Controls.Add(label45);
-            groupBox13.Location = new Point(30, 162);
+            groupBox13.Location = new Point(30, 170);
             groupBox13.Name = "groupBox13";
-            groupBox13.Size = new Size(809, 321);
+            groupBox13.Size = new Size(582, 321);
             groupBox13.TabIndex = 10;
             groupBox13.TabStop = false;
             groupBox13.Text = "Seções geométricas das peças";
             // 
             // textBox14
             // 
-            textBox14.Location = new Point(366, 275);
+            textBox14.Location = new Point(288, 275);
             textBox14.Name = "textBox14";
             textBox14.Size = new Size(243, 29);
             textBox14.TabIndex = 19;
@@ -846,11 +849,11 @@
             // label52
             // 
             label52.AutoSize = true;
-            label52.Location = new Point(366, 253);
+            label52.Location = new Point(288, 253);
             label52.Name = "label52";
-            label52.Size = new Size(257, 21);
+            label52.Size = new Size(288, 21);
             label52.TabIndex = 18;
-            label52.Text = "Profundidade da mão francesa (cm)";
+            label52.Text = "F2 - Profundidade da mão francesa (cm)";
             // 
             // textBox15
             // 
@@ -864,13 +867,13 @@
             label53.AutoSize = true;
             label53.Location = new Point(18, 253);
             label53.Name = "label53";
-            label53.Size = new Size(195, 21);
+            label53.Size = new Size(226, 21);
             label53.TabIndex = 16;
-            label53.Text = "Base da mão francesa (cm)";
+            label53.Text = "F1 - Base da mão francesa (cm)";
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(366, 214);
+            textBox12.Location = new Point(288, 214);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(243, 29);
             textBox12.TabIndex = 15;
@@ -878,11 +881,11 @@
             // label50
             // 
             label50.AutoSize = true;
-            label50.Location = new Point(366, 192);
+            label50.Location = new Point(288, 192);
             label50.Name = "label50";
-            label50.Size = new Size(232, 21);
+            label50.Size = new Size(266, 21);
             label50.TabIndex = 14;
-            label50.Text = "Profundidade do montante (cm)";
+            label50.Text = "D2 - Profundidade do montante (cm)";
             // 
             // textBox13
             // 
@@ -896,13 +899,13 @@
             label51.AutoSize = true;
             label51.Location = new Point(18, 192);
             label51.Name = "label51";
-            label51.Size = new Size(170, 21);
+            label51.Size = new Size(204, 21);
             label51.TabIndex = 12;
-            label51.Text = "Base do montante (cm)";
+            label51.Text = "D1 - Base do montante (cm)";
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(366, 155);
+            textBox10.Location = new Point(288, 155);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(243, 29);
             textBox10.TabIndex = 11;
@@ -910,11 +913,11 @@
             // label48
             // 
             label48.AutoSize = true;
-            label48.Location = new Point(366, 134);
+            label48.Location = new Point(288, 134);
             label48.Name = "label48";
-            label48.Size = new Size(189, 21);
+            label48.Size = new Size(222, 21);
             label48.TabIndex = 10;
-            label48.Text = "Espessura do rodapé (cm)";
+            label48.Text = "C2 - Espessura do rodapé (cm)";
             // 
             // textBox11
             // 
@@ -928,13 +931,13 @@
             label49.AutoSize = true;
             label49.Location = new Point(18, 134);
             label49.Name = "label49";
-            label49.Size = new Size(166, 21);
+            label49.Size = new Size(195, 21);
             label49.TabIndex = 8;
-            label49.Text = "Altura  do rodapé (cm)";
+            label49.Text = "C1 - Altura do rodapé (cm)";
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(366, 101);
+            textBox8.Location = new Point(288, 101);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(243, 29);
             textBox8.TabIndex = 7;
@@ -942,11 +945,11 @@
             // label46
             // 
             label46.AutoSize = true;
-            label46.Location = new Point(366, 78);
+            label46.Location = new Point(288, 78);
             label46.Name = "label46";
-            label46.Size = new Size(243, 21);
+            label46.Size = new Size(275, 21);
             label46.TabIndex = 6;
-            label46.Text = "Espessura da travessa média (cm)";
+            label46.Text = "B2 - Espessura da travessa média (cm)";
             // 
             // textBox9
             // 
@@ -960,13 +963,13 @@
             label47.AutoSize = true;
             label47.Location = new Point(18, 78);
             label47.Name = "label47";
-            label47.Size = new Size(216, 21);
+            label47.Size = new Size(248, 21);
             label47.TabIndex = 4;
-            label47.Text = "Altura da travessa média (cm)";
+            label47.Text = "B1 - Altura da travessa média (cm)";
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(366, 48);
+            textBox6.Location = new Point(288, 48);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(243, 29);
             textBox6.TabIndex = 3;
@@ -974,11 +977,11 @@
             // label44
             // 
             label44.AutoSize = true;
-            label44.Location = new Point(366, 25);
+            label44.Location = new Point(288, 25);
             label44.Name = "label44";
-            label44.Size = new Size(258, 21);
+            label44.Size = new Size(291, 21);
             label44.TabIndex = 2;
-            label44.Text = "Espessura da travessa superior (cm)";
+            label44.Text = "A2 - Espessura da travessa superior (cm)";
             // 
             // textBox7
             // 
@@ -992,9 +995,9 @@
             label45.AutoSize = true;
             label45.Location = new Point(18, 25);
             label45.Name = "label45";
-            label45.Size = new Size(238, 21);
+            label45.Size = new Size(264, 21);
             label45.TabIndex = 0;
-            label45.Text = "Altura da travessa susperior (cm)";
+            label45.Text = "A1 - Altura da travessa superior (cm)";
             // 
             // tabPage5
             // 
@@ -1003,7 +1006,7 @@
             tabPage5.Location = new Point(4, 30);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(914, 530);
+            tabPage5.Size = new Size(1062, 530);
             tabPage5.TabIndex = 2;
             tabPage5.Text = "Carga";
             tabPage5.UseVisualStyleBackColor = true;
@@ -1092,14 +1095,24 @@
             tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(942, 604);
+            tabControl1.Size = new Size(1097, 612);
             tabControl1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.imagem;
+            pictureBox1.Location = new Point(636, 46);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(401, 384);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(964, 626);
+            ClientSize = new Size(1115, 626);
             Controls.Add(tabControl1);
             Name = "Form1";
             Text = "GC-SEG";
@@ -1138,6 +1151,7 @@
             groupBox14.ResumeLayout(false);
             groupBox14.PerformLayout();
             tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -1240,5 +1254,6 @@
         private TabPage tabPage3;
         private TabPage tabPage4;
         private TabPage tabPage5;
+        private PictureBox pictureBox1;
     }
 }

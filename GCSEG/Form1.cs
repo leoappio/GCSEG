@@ -12,7 +12,8 @@ namespace GCSEG
             List<bool> resultadosConversao = new List<bool>();
 
             string classeMadeira;
-            double fcok, ftok, fvk, eparam, pa, kmod1, kmod2, kmod3;
+            double fcok, ftok, fvk, eparam, pa, kmod1, kmod2, kmod3, l, dn,
+                tsb, tsh, tmb, tmh, trb, trh, mb, mh, mfb, mfh, nch, fu, fck;
 
             classeMadeira = comboBox1.Text;
 
@@ -21,6 +22,23 @@ namespace GCSEG
             resultadosConversao.Add(double.TryParse(textBox1.Text, out kmod1));
             resultadosConversao.Add(double.TryParse(textBox2.Text, out kmod2));
             resultadosConversao.Add(double.TryParse(textBox3.Text, out kmod3));
+            resultadosConversao.Add(double.TryParse(textBox4.Text, out l));
+            resultadosConversao.Add(double.TryParse(textBox5.Text, out dn));
+
+            resultadosConversao.Add(double.TryParse(textBox7.Text, out tsb));
+            resultadosConversao.Add(double.TryParse(textBox6.Text, out tsh));
+            resultadosConversao.Add(double.TryParse(textBox9.Text, out tmb));
+            resultadosConversao.Add(double.TryParse(textBox8.Text, out tmh));
+            resultadosConversao.Add(double.TryParse(textBox11.Text, out trb));
+            resultadosConversao.Add(double.TryParse(textBox10.Text, out trh));
+            resultadosConversao.Add(double.TryParse(textBox13.Text, out mb));
+            resultadosConversao.Add(double.TryParse(textBox12.Text, out mh));
+            resultadosConversao.Add(double.TryParse(textBox15.Text, out mfb));
+            resultadosConversao.Add(double.TryParse(textBox14.Text, out mfh));
+
+            resultadosConversao.Add(double.TryParse(textBox16.Text, out nch));
+            resultadosConversao.Add(double.TryParse(textBox17.Text, out fu));
+            resultadosConversao.Add(double.TryParse(textBox18.Text, out fck));
 
             if (resultadosConversao.All(conversaoSucedida => conversaoSucedida))
             {
@@ -35,6 +53,21 @@ namespace GCSEG
                     Kmod1= kmod1,
                     Kmod2 = kmod2,
                     Kmod3 = kmod3,
+                    L = l,
+                    Dn = dn,
+                    Tsb = tsb,
+                    Tsh = tsh,
+                    Tmb = tmb,
+                    Tmh = tmh,
+                    Trb = trb,
+                    Trh = trh,
+                    Mb = mb,
+                    Mh = mh,
+                    Mfb = mfb,
+                    Mfh = mfh,
+                    Nch = nch,
+                    Fu = fu,
+                    Fck = fck,
                 };
 
                 await ShowProgressFormAsync();
