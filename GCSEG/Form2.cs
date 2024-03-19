@@ -136,7 +136,7 @@ namespace GCSEG
             label48.Text = $"Tsd travessa média (Compressão): {Tctm:F2}KN/cm²";
             label47.Text = $"Tsd travessa média (Tração): {Tttm:F2}KN/cm²";
             label46.Text = $"Tsd rodapé (Compressão): {Tcr:F2}KN/cm²";
-            label45.Text = $"Tsd rodapé (Traão): {Ttr:F2}KN/cm²";
+            label45.Text = $"Tsd rodapé (Tração): {Ttr:F2}KN/cm²";
             label44.Text = $"Tsd montante (Compressão): {Tcmo:F2}KN/cm²";
             label43.Text = $"Tsd montante (Tração): {Ttmo:F2}KN/cm²";
 
