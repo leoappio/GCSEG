@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography;
+using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GCSEG
@@ -148,7 +149,8 @@ namespace GCSEG
             label51.Text = $"Vsd montante: {Tvmo:F4}KN/cm²";     
 
             //Tab4
-            label54.Text = $"Compressão na travessa superior: {((-Tcts / fcod) * 100):F2}%";
+            label54.Text = $"Compressão na travessa superior ";
+            progressBar1.Value = (int)(-Tcts / fcod * 100);
             label55.Text = $"Tração na travessa superior: {((Ttts / ftod) * 100):F2}%";
             label56.Text = $"Cisalhamento na travessa superior: {((Tvts / fvd) * 100):F2}%";
 

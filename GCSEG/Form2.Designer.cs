@@ -1,4 +1,6 @@
-﻿namespace GCSEG
+﻿using GCSEG.ProgressBarSample;
+
+namespace GCSEG
 {
     partial class Form2
     {
@@ -60,18 +62,6 @@
             label7 = new Label();
             groupBox5 = new GroupBox();
             label1 = new Label();
-            tabPage2 = new TabPage();
-            groupBox10 = new GroupBox();
-            label29 = new Label();
-            label30 = new Label();
-            groupBox11 = new GroupBox();
-            label27 = new Label();
-            label28 = new Label();
-            groupBox9 = new GroupBox();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label20 = new Label();
             tabPage3 = new TabPage();
             groupBox13 = new GroupBox();
             label51 = new Label();
@@ -98,8 +88,22 @@
             label33 = new Label();
             label32 = new Label();
             label31 = new Label();
+            tabPage2 = new TabPage();
+            groupBox10 = new GroupBox();
+            label29 = new Label();
+            label30 = new Label();
+            groupBox11 = new GroupBox();
+            label27 = new Label();
+            label28 = new Label();
+            groupBox9 = new GroupBox();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
             tabPage4 = new TabPage();
             groupBox14 = new GroupBox();
+            groupBox17 = new GroupBox();
+            progressBar1 = new TextProgressBar();
             label66 = new Label();
             label63 = new Label();
             label64 = new Label();
@@ -129,6 +133,19 @@
             label77 = new Label();
             label80 = new Label();
             label81 = new Label();
+            textProgressBar1 = new TextProgressBar();
+            textProgressBar2 = new TextProgressBar();
+            textProgressBar3 = new TextProgressBar();
+            textProgressBar4 = new TextProgressBar();
+            textProgressBar5 = new TextProgressBar();
+            textProgressBar6 = new TextProgressBar();
+            textProgressBar7 = new TextProgressBar();
+            textProgressBar8 = new TextProgressBar();
+            textProgressBar9 = new TextProgressBar();
+            textProgressBar10 = new TextProgressBar();
+            textProgressBar11 = new TextProgressBar();
+            textProgressBar12 = new TextProgressBar();
+            label72 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -139,15 +156,16 @@
             groupBox7.SuspendLayout();
             groupBox6.SuspendLayout();
             groupBox5.SuspendLayout();
+            tabPage3.SuspendLayout();
+            groupBox13.SuspendLayout();
+            groupBox12.SuspendLayout();
             tabPage2.SuspendLayout();
             groupBox10.SuspendLayout();
             groupBox11.SuspendLayout();
             groupBox9.SuspendLayout();
-            tabPage3.SuspendLayout();
-            groupBox13.SuspendLayout();
-            groupBox12.SuspendLayout();
             tabPage4.SuspendLayout();
             groupBox14.SuspendLayout();
+            groupBox17.SuspendLayout();
             tabPage5.SuspendLayout();
             groupBox15.SuspendLayout();
             tabPage6.SuspendLayout();
@@ -476,129 +494,6 @@
             label1.TabIndex = 0;
             label1.Text = "label1";
             // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(groupBox10);
-            tabPage2.Controls.Add(groupBox3);
-            tabPage2.Controls.Add(groupBox11);
-            tabPage2.Controls.Add(groupBox9);
-            tabPage2.Controls.Add(groupBox2);
-            tabPage2.Controls.Add(groupBox4);
-            tabPage2.Location = new Point(4, 29);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(915, 545);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Esforços";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox10
-            // 
-            groupBox10.Controls.Add(label29);
-            groupBox10.Controls.Add(label30);
-            groupBox10.Location = new Point(441, 22);
-            groupBox10.Name = "groupBox10";
-            groupBox10.Size = new Size(387, 136);
-            groupBox10.TabIndex = 4;
-            groupBox10.TabStop = false;
-            groupBox10.Text = "Cálculo dos esforços solicitantes nos montantes";
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Location = new Point(6, 38);
-            label29.Name = "label29";
-            label29.Size = new Size(58, 20);
-            label29.TabIndex = 1;
-            label29.Text = "label29";
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Location = new Point(6, 90);
-            label30.Name = "label30";
-            label30.Size = new Size(58, 20);
-            label30.TabIndex = 0;
-            label30.Text = "label30";
-            // 
-            // groupBox11
-            // 
-            groupBox11.Controls.Add(label27);
-            groupBox11.Controls.Add(label28);
-            groupBox11.Location = new Point(441, 413);
-            groupBox11.Name = "groupBox11";
-            groupBox11.Size = new Size(387, 109);
-            groupBox11.TabIndex = 5;
-            groupBox11.TabStop = false;
-            groupBox11.Text = "Cálculo dos esforços solicitantes nas mãos francesas";
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Location = new Point(6, 39);
-            label27.Name = "label27";
-            label27.Size = new Size(58, 20);
-            label27.TabIndex = 1;
-            label27.Text = "label27";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Location = new Point(6, 71);
-            label28.Name = "label28";
-            label28.Size = new Size(58, 20);
-            label28.TabIndex = 0;
-            label28.Text = "label28";
-            // 
-            // groupBox9
-            // 
-            groupBox9.Controls.Add(label17);
-            groupBox9.Controls.Add(label18);
-            groupBox9.Controls.Add(label19);
-            groupBox9.Controls.Add(label20);
-            groupBox9.Location = new Point(6, 164);
-            groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(407, 171);
-            groupBox9.TabIndex = 4;
-            groupBox9.TabStop = false;
-            groupBox9.Text = "Geometria do guarda-corpo";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(6, 138);
-            label17.Name = "label17";
-            label17.Size = new Size(58, 20);
-            label17.TabIndex = 3;
-            label17.Text = "label17";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new Point(6, 100);
-            label18.Name = "label18";
-            label18.Size = new Size(276, 20);
-            label18.TabIndex = 2;
-            label18.Text = "Altura no rodapé segundo NR-18: 15 cm";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Location = new Point(6, 64);
-            label19.Name = "label19";
-            label19.Size = new Size(327, 20);
-            label19.TabIndex = 1;
-            label19.Text = "Altura da travessa media segundo NR-18: 70 cm";
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Location = new Point(6, 32);
-            label20.Name = "label20";
-            label20.Size = new Size(347, 20);
-            label20.TabIndex = 0;
-            label20.Text = "Altura da travessa superior segundo NR-18: 120 cm";
-            // 
             // tabPage3
             // 
             tabPage3.Controls.Add(groupBox13);
@@ -860,6 +755,129 @@
             label31.TabIndex = 0;
             label31.Text = "label31";
             // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(groupBox10);
+            tabPage2.Controls.Add(groupBox3);
+            tabPage2.Controls.Add(groupBox11);
+            tabPage2.Controls.Add(groupBox9);
+            tabPage2.Controls.Add(groupBox2);
+            tabPage2.Controls.Add(groupBox4);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(915, 545);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Esforços";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox10
+            // 
+            groupBox10.Controls.Add(label29);
+            groupBox10.Controls.Add(label30);
+            groupBox10.Location = new Point(441, 22);
+            groupBox10.Name = "groupBox10";
+            groupBox10.Size = new Size(387, 136);
+            groupBox10.TabIndex = 4;
+            groupBox10.TabStop = false;
+            groupBox10.Text = "Cálculo dos esforços solicitantes nos montantes";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(6, 38);
+            label29.Name = "label29";
+            label29.Size = new Size(58, 20);
+            label29.TabIndex = 1;
+            label29.Text = "label29";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(6, 90);
+            label30.Name = "label30";
+            label30.Size = new Size(58, 20);
+            label30.TabIndex = 0;
+            label30.Text = "label30";
+            // 
+            // groupBox11
+            // 
+            groupBox11.Controls.Add(label27);
+            groupBox11.Controls.Add(label28);
+            groupBox11.Location = new Point(441, 413);
+            groupBox11.Name = "groupBox11";
+            groupBox11.Size = new Size(387, 109);
+            groupBox11.TabIndex = 5;
+            groupBox11.TabStop = false;
+            groupBox11.Text = "Cálculo dos esforços solicitantes nas mãos francesas";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Location = new Point(6, 39);
+            label27.Name = "label27";
+            label27.Size = new Size(58, 20);
+            label27.TabIndex = 1;
+            label27.Text = "label27";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(6, 71);
+            label28.Name = "label28";
+            label28.Size = new Size(58, 20);
+            label28.TabIndex = 0;
+            label28.Text = "label28";
+            // 
+            // groupBox9
+            // 
+            groupBox9.Controls.Add(label17);
+            groupBox9.Controls.Add(label18);
+            groupBox9.Controls.Add(label19);
+            groupBox9.Controls.Add(label20);
+            groupBox9.Location = new Point(6, 164);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Size = new Size(407, 171);
+            groupBox9.TabIndex = 4;
+            groupBox9.TabStop = false;
+            groupBox9.Text = "Geometria do guarda-corpo";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(6, 138);
+            label17.Name = "label17";
+            label17.Size = new Size(58, 20);
+            label17.TabIndex = 3;
+            label17.Text = "label17";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(6, 100);
+            label18.Name = "label18";
+            label18.Size = new Size(276, 20);
+            label18.TabIndex = 2;
+            label18.Text = "Altura no rodapé segundo NR-18: 15 cm";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(6, 64);
+            label19.Name = "label19";
+            label19.Size = new Size(327, 20);
+            label19.TabIndex = 1;
+            label19.Text = "Altura da travessa media segundo NR-18: 70 cm";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(6, 32);
+            label20.Name = "label20";
+            label20.Size = new Size(347, 20);
+            label20.TabIndex = 0;
+            label20.Text = "Altura da travessa superior segundo NR-18: 120 cm";
+            // 
             // tabPage4
             // 
             tabPage4.Controls.Add(groupBox14);
@@ -873,6 +891,20 @@
             // 
             // groupBox14
             // 
+            groupBox14.Controls.Add(textProgressBar12);
+            groupBox14.Controls.Add(textProgressBar11);
+            groupBox14.Controls.Add(textProgressBar10);
+            groupBox14.Controls.Add(textProgressBar9);
+            groupBox14.Controls.Add(textProgressBar8);
+            groupBox14.Controls.Add(textProgressBar7);
+            groupBox14.Controls.Add(textProgressBar6);
+            groupBox14.Controls.Add(textProgressBar5);
+            groupBox14.Controls.Add(textProgressBar4);
+            groupBox14.Controls.Add(textProgressBar3);
+            groupBox14.Controls.Add(textProgressBar2);
+            groupBox14.Controls.Add(textProgressBar1);
+            groupBox14.Controls.Add(groupBox17);
+            groupBox14.Controls.Add(progressBar1);
             groupBox14.Controls.Add(label66);
             groupBox14.Controls.Add(label63);
             groupBox14.Controls.Add(label64);
@@ -888,15 +920,37 @@
             groupBox14.Controls.Add(label54);
             groupBox14.Location = new Point(18, 18);
             groupBox14.Name = "groupBox14";
-            groupBox14.Size = new Size(881, 440);
+            groupBox14.Size = new Size(881, 521);
             groupBox14.TabIndex = 0;
             groupBox14.TabStop = false;
             groupBox14.Text = "VERIFICAÇÃO PARA ESTADO LIMITE ULTIMO  (ELU)";
             // 
+            // groupBox17
+            // 
+            groupBox17.Controls.Add(label72);
+            groupBox17.Location = new Point(461, 157);
+            groupBox17.Name = "groupBox17";
+            groupBox17.Size = new Size(341, 100);
+            groupBox17.TabIndex = 14;
+            groupBox17.TabStop = false;
+            groupBox17.Text = "Resultado do dimensionamento";
+            // 
+            // progressBar1
+            // 
+            progressBar1.CustomText = "";
+            progressBar1.Location = new Point(266, 32);
+            progressBar1.Name = "progressBar1";
+            progressBar1.ProgressColor = Color.LimeGreen;
+            progressBar1.Size = new Size(135, 23);
+            progressBar1.TabIndex = 13;
+            progressBar1.TextColor = Color.Black;
+            progressBar1.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            progressBar1.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
             // label66
             // 
             label66.AutoSize = true;
-            label66.Location = new Point(463, 174);
+            label66.Location = new Point(17, 425);
             label66.Name = "label66";
             label66.Size = new Size(58, 20);
             label66.TabIndex = 12;
@@ -905,7 +959,7 @@
             // label63
             // 
             label63.AutoSize = true;
-            label63.Location = new Point(463, 96);
+            label63.Location = new Point(17, 381);
             label63.Name = "label63";
             label63.Size = new Size(58, 20);
             label63.TabIndex = 11;
@@ -914,7 +968,7 @@
             // label64
             // 
             label64.AutoSize = true;
-            label64.Location = new Point(463, 65);
+            label64.Location = new Point(17, 350);
             label64.Name = "label64";
             label64.Size = new Size(58, 20);
             label64.TabIndex = 10;
@@ -923,7 +977,7 @@
             // label65
             // 
             label65.AutoSize = true;
-            label65.Location = new Point(463, 35);
+            label65.Location = new Point(17, 320);
             label65.Name = "label65";
             label65.Size = new Size(58, 20);
             label65.TabIndex = 9;
@@ -932,7 +986,7 @@
             // label60
             // 
             label60.AutoSize = true;
-            label60.Location = new Point(17, 326);
+            label60.Location = new Point(17, 286);
             label60.Name = "label60";
             label60.Size = new Size(58, 20);
             label60.TabIndex = 8;
@@ -941,7 +995,7 @@
             // label61
             // 
             label61.AutoSize = true;
-            label61.Location = new Point(17, 295);
+            label61.Location = new Point(17, 255);
             label61.Name = "label61";
             label61.Size = new Size(58, 20);
             label61.TabIndex = 7;
@@ -950,7 +1004,7 @@
             // label62
             // 
             label62.AutoSize = true;
-            label62.Location = new Point(17, 265);
+            label62.Location = new Point(17, 225);
             label62.Name = "label62";
             label62.Size = new Size(58, 20);
             label62.TabIndex = 6;
@@ -959,7 +1013,7 @@
             // label57
             // 
             label57.AutoSize = true;
-            label57.Location = new Point(17, 205);
+            label57.Location = new Point(17, 188);
             label57.Name = "label57";
             label57.Size = new Size(58, 20);
             label57.TabIndex = 5;
@@ -968,7 +1022,7 @@
             // label58
             // 
             label58.AutoSize = true;
-            label58.Location = new Point(17, 174);
+            label58.Location = new Point(17, 157);
             label58.Name = "label58";
             label58.Size = new Size(58, 20);
             label58.TabIndex = 4;
@@ -977,7 +1031,7 @@
             // label59
             // 
             label59.AutoSize = true;
-            label59.Location = new Point(17, 144);
+            label59.Location = new Point(17, 127);
             label59.Name = "label59";
             label59.Size = new Size(58, 20);
             label59.TabIndex = 3;
@@ -1170,6 +1224,160 @@
             label81.TabIndex = 0;
             label81.Text = "label81";
             // 
+            // textProgressBar1
+            // 
+            textProgressBar1.CustomText = "";
+            textProgressBar1.Location = new Point(266, 65);
+            textProgressBar1.Name = "textProgressBar1";
+            textProgressBar1.ProgressColor = Color.LimeGreen;
+            textProgressBar1.Size = new Size(135, 23);
+            textProgressBar1.TabIndex = 15;
+            textProgressBar1.TextColor = Color.Black;
+            textProgressBar1.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar1.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar2
+            // 
+            textProgressBar2.CustomText = "";
+            textProgressBar2.Location = new Point(266, 96);
+            textProgressBar2.Name = "textProgressBar2";
+            textProgressBar2.ProgressColor = Color.LimeGreen;
+            textProgressBar2.Size = new Size(135, 23);
+            textProgressBar2.TabIndex = 16;
+            textProgressBar2.TextColor = Color.Black;
+            textProgressBar2.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar2.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar3
+            // 
+            textProgressBar3.CustomText = "";
+            textProgressBar3.Location = new Point(266, 127);
+            textProgressBar3.Name = "textProgressBar3";
+            textProgressBar3.ProgressColor = Color.LimeGreen;
+            textProgressBar3.Size = new Size(135, 23);
+            textProgressBar3.TabIndex = 17;
+            textProgressBar3.TextColor = Color.Black;
+            textProgressBar3.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar3.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar4
+            // 
+            textProgressBar4.CustomText = "";
+            textProgressBar4.Location = new Point(266, 157);
+            textProgressBar4.Name = "textProgressBar4";
+            textProgressBar4.ProgressColor = Color.LimeGreen;
+            textProgressBar4.Size = new Size(135, 23);
+            textProgressBar4.TabIndex = 18;
+            textProgressBar4.TextColor = Color.Black;
+            textProgressBar4.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar4.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar5
+            // 
+            textProgressBar5.CustomText = "";
+            textProgressBar5.Location = new Point(266, 188);
+            textProgressBar5.Name = "textProgressBar5";
+            textProgressBar5.ProgressColor = Color.LimeGreen;
+            textProgressBar5.Size = new Size(135, 23);
+            textProgressBar5.TabIndex = 19;
+            textProgressBar5.TextColor = Color.Black;
+            textProgressBar5.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar5.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar6
+            // 
+            textProgressBar6.CustomText = "";
+            textProgressBar6.Location = new Point(266, 225);
+            textProgressBar6.Name = "textProgressBar6";
+            textProgressBar6.ProgressColor = Color.LimeGreen;
+            textProgressBar6.Size = new Size(135, 23);
+            textProgressBar6.TabIndex = 20;
+            textProgressBar6.TextColor = Color.Black;
+            textProgressBar6.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar6.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar7
+            // 
+            textProgressBar7.CustomText = "";
+            textProgressBar7.Location = new Point(266, 255);
+            textProgressBar7.Name = "textProgressBar7";
+            textProgressBar7.ProgressColor = Color.LimeGreen;
+            textProgressBar7.Size = new Size(135, 23);
+            textProgressBar7.TabIndex = 21;
+            textProgressBar7.TextColor = Color.Black;
+            textProgressBar7.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar7.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar8
+            // 
+            textProgressBar8.CustomText = "";
+            textProgressBar8.Location = new Point(266, 286);
+            textProgressBar8.Name = "textProgressBar8";
+            textProgressBar8.ProgressColor = Color.LimeGreen;
+            textProgressBar8.Size = new Size(135, 23);
+            textProgressBar8.TabIndex = 22;
+            textProgressBar8.TextColor = Color.Black;
+            textProgressBar8.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar8.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar9
+            // 
+            textProgressBar9.CustomText = "";
+            textProgressBar9.Location = new Point(266, 320);
+            textProgressBar9.Name = "textProgressBar9";
+            textProgressBar9.ProgressColor = Color.LimeGreen;
+            textProgressBar9.Size = new Size(135, 23);
+            textProgressBar9.TabIndex = 23;
+            textProgressBar9.TextColor = Color.Black;
+            textProgressBar9.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar9.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar10
+            // 
+            textProgressBar10.CustomText = "";
+            textProgressBar10.Location = new Point(266, 350);
+            textProgressBar10.Name = "textProgressBar10";
+            textProgressBar10.ProgressColor = Color.LimeGreen;
+            textProgressBar10.Size = new Size(135, 23);
+            textProgressBar10.TabIndex = 24;
+            textProgressBar10.TextColor = Color.Black;
+            textProgressBar10.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar10.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar11
+            // 
+            textProgressBar11.CustomText = "";
+            textProgressBar11.Location = new Point(266, 381);
+            textProgressBar11.Name = "textProgressBar11";
+            textProgressBar11.ProgressColor = Color.LimeGreen;
+            textProgressBar11.Size = new Size(135, 23);
+            textProgressBar11.TabIndex = 25;
+            textProgressBar11.TextColor = Color.Black;
+            textProgressBar11.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar11.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar12
+            // 
+            textProgressBar12.CustomText = "";
+            textProgressBar12.Location = new Point(266, 422);
+            textProgressBar12.Name = "textProgressBar12";
+            textProgressBar12.ProgressColor = Color.LimeGreen;
+            textProgressBar12.Size = new Size(135, 23);
+            textProgressBar12.TabIndex = 26;
+            textProgressBar12.TextColor = Color.Black;
+            textProgressBar12.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar12.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // label72
+            // 
+            label72.AutoSize = true;
+            label72.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label72.Location = new Point(6, 42);
+            label72.Name = "label72";
+            label72.Size = new Size(69, 25);
+            label72.TabIndex = 0;
+            label72.Text = "label72";
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1197,6 +1405,11 @@
             groupBox6.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
+            tabPage3.ResumeLayout(false);
+            groupBox13.ResumeLayout(false);
+            groupBox13.PerformLayout();
+            groupBox12.ResumeLayout(false);
+            groupBox12.PerformLayout();
             tabPage2.ResumeLayout(false);
             groupBox10.ResumeLayout(false);
             groupBox10.PerformLayout();
@@ -1204,14 +1417,11 @@
             groupBox11.PerformLayout();
             groupBox9.ResumeLayout(false);
             groupBox9.PerformLayout();
-            tabPage3.ResumeLayout(false);
-            groupBox13.ResumeLayout(false);
-            groupBox13.PerformLayout();
-            groupBox12.ResumeLayout(false);
-            groupBox12.PerformLayout();
             tabPage4.ResumeLayout(false);
             groupBox14.ResumeLayout(false);
             groupBox14.PerformLayout();
+            groupBox17.ResumeLayout(false);
+            groupBox17.PerformLayout();
             tabPage5.ResumeLayout(false);
             groupBox15.ResumeLayout(false);
             groupBox15.PerformLayout();
@@ -1324,5 +1534,20 @@
         private Label label77;
         private Label label80;
         private Label label81;
+        private GroupBox groupBox17;
+        private TextProgressBar progressBar1;
+        private TextProgressBar textProgressBar12;
+        private TextProgressBar textProgressBar11;
+        private TextProgressBar textProgressBar10;
+        private TextProgressBar textProgressBar9;
+        private TextProgressBar textProgressBar8;
+        private TextProgressBar textProgressBar7;
+        private TextProgressBar textProgressBar6;
+        private TextProgressBar textProgressBar5;
+        private TextProgressBar textProgressBar4;
+        private TextProgressBar textProgressBar3;
+        private TextProgressBar textProgressBar2;
+        private TextProgressBar textProgressBar1;
+        private Label label72;
     }
 }
