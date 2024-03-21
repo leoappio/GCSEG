@@ -5,6 +5,14 @@ namespace GCSEG
         public Form1()
         {
             InitializeComponent();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.Rows.Add("C-20", "20", "4", "3500", "400", "500");
+            dataGridView1.Rows.Add("C-25", "25", "5", "8500", "450", "550");
+            dataGridView1.Rows.Add("C-30", "30", "6", "14500", "500", "600");
+            dataGridView1.Rows.Add("D-20", "20", "4", "9500", "500", "650");
+            dataGridView1.Rows.Add("D-30", "30", "5", "14500", "650", "800");
+            dataGridView1.Rows.Add("D-40", "40", "6", "19500", "750", "950");
+            dataGridView1.Rows.Add("D-60", "50", "8", "24500", "800", "1000");
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -50,7 +58,7 @@ namespace GCSEG
                     Fvk = valoresCaracteristicos.Fvk,
                     E = valoresCaracteristicos.E,
                     Pa = valoresCaracteristicos.Pa,
-                    Kmod1= kmod1,
+                    Kmod1 = kmod1,
                     Kmod2 = kmod2,
                     Kmod3 = kmod3,
                     L = l,
@@ -93,25 +101,25 @@ namespace GCSEG
                     valores.E = 3500;
                     valores.Pa = 500;
                     break;
-                case "C-25 - Pinus Elliotti, Araucária":
+                case "C-25":
                     valores.Fcok = 25;
                     valores.Fvk = 5;
                     valores.E = 8500;
                     valores.Pa = 550;
                     break;
-                case "C-30 - Pinus Taeda":
+                case "C-30":
                     valores.Fcok = 30;
                     valores.Fvk = 6;
                     valores.E = 14500;
                     valores.Pa = 600;
                     break;
-                case "D-20 - Eucalipto grandis":
+                case "D-20":
                     valores.Fcok = 20;
                     valores.Fvk = 4;
                     valores.E = 9500;
                     valores.Pa = 650;
                     break;
-                case "D-30 - Eucalipto saligna, Eucalipto tereticornis":
+                case "D-30":
                     valores.Fcok = 30;
                     valores.Fvk = 5;
                     valores.E = 14500;
@@ -150,5 +158,9 @@ namespace GCSEG
             return tcs.Task;
         }
 
+        private void label30_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
