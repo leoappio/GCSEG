@@ -70,13 +70,6 @@
             tabControl2 = new TabControl();
             tabPage3 = new TabPage();
             groupBox8 = new GroupBox();
-            dataGridView1 = new DataGridView();
-            Classes = new DataGridViewTextBoxColumn();
-            Fcok = new DataGridViewTextBoxColumn();
-            Fvk = new DataGridViewTextBoxColumn();
-            E = new DataGridViewTextBoxColumn();
-            Pbasm = new DataGridViewTextBoxColumn();
-            Paparente = new DataGridViewTextBoxColumn();
             comboBox1 = new ComboBox();
             groupBox9 = new GroupBox();
             textBox1 = new TextBox();
@@ -99,6 +92,8 @@
             tabPage4 = new TabPage();
             pictureBox1 = new PictureBox();
             groupBox12 = new GroupBox();
+            textBox19 = new TextBox();
+            label57 = new Label();
             textBox5 = new TextBox();
             label43 = new Label();
             textBox4 = new TextBox();
@@ -133,9 +128,13 @@
             label55 = new Label();
             textBox16 = new TextBox();
             label54 = new Label();
+            Classes = new DataGridViewTextBoxColumn();
+            Fcok = new DataGridViewTextBoxColumn();
+            Fvk = new DataGridViewTextBoxColumn();
+            E = new DataGridViewTextBoxColumn();
+            Pbasm = new DataGridViewTextBoxColumn();
+            Paparente = new DataGridViewTextBoxColumn();
             tabControl1 = new TabControl();
-            textBox19 = new TextBox();
-            label57 = new Label();
             tabPage2.SuspendLayout();
             groupBox7.SuspendLayout();
             groupBox6.SuspendLayout();
@@ -148,7 +147,6 @@
             tabControl2.SuspendLayout();
             tabPage3.SuspendLayout();
             groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox9.SuspendLayout();
             groupBox10.SuspendLayout();
             groupBox11.SuspendLayout();
@@ -570,64 +568,14 @@
             // 
             // groupBox8
             // 
-            groupBox8.Controls.Add(dataGridView1);
             groupBox8.Controls.Add(comboBox1);
             groupBox8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             groupBox8.Location = new Point(7, 17);
             groupBox8.Name = "groupBox8";
-            groupBox8.Size = new Size(703, 300);
+            groupBox8.Size = new Size(357, 80);
             groupBox8.TabIndex = 0;
             groupBox8.TabStop = false;
             groupBox8.Text = "Classe de madeira";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Classes, Fcok, Fvk, E, Pbasm, Paparente });
-            dataGridView1.Location = new Point(6, 65);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(691, 223);
-            dataGridView1.TabIndex = 9;
-            // 
-            // Classes
-            // 
-            Classes.HeaderText = "Classes";
-            Classes.Name = "Classes";
-            Classes.ReadOnly = true;
-            // 
-            // Fcok
-            // 
-            Fcok.HeaderText = "Fcok(Mpa)";
-            Fcok.Name = "Fcok";
-            Fcok.ReadOnly = true;
-            // 
-            // Fvk
-            // 
-            Fvk.HeaderText = "Fvk(MPa)";
-            Fvk.Name = "Fvk";
-            Fvk.ReadOnly = true;
-            // 
-            // E
-            // 
-            E.HeaderText = "E(MPa)";
-            E.Name = "E";
-            E.ReadOnly = true;
-            // 
-            // Pbasm
-            // 
-            Pbasm.HeaderText = "Pbasm(kg/m³)";
-            Pbasm.Name = "Pbasm";
-            Pbasm.ReadOnly = true;
-            // 
-            // Paparente
-            // 
-            Paparente.HeaderText = "Paparente(kg/m³)";
-            Paparente.Name = "Paparente";
-            Paparente.ReadOnly = true;
             // 
             // comboBox1
             // 
@@ -648,16 +596,16 @@
             groupBox9.Controls.Add(label31);
             groupBox9.Controls.Add(label30);
             groupBox9.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox9.Location = new Point(731, 17);
+            groupBox9.Location = new Point(7, 103);
             groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(315, 184);
+            groupBox9.Size = new Size(357, 245);
             groupBox9.TabIndex = 1;
             groupBox9.TabStop = false;
             groupBox9.Text = "Fator de Carregamento";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(75, 146);
+            textBox1.Location = new Point(71, 197);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(188, 27);
             textBox1.TabIndex = 6;
@@ -666,7 +614,7 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label35.Location = new Point(6, 149);
+            label35.Location = new Point(2, 200);
             label35.Name = "label35";
             label35.Size = new Size(68, 20);
             label35.TabIndex = 5;
@@ -676,7 +624,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label34.Location = new Point(6, 95);
+            label34.Location = new Point(6, 122);
             label34.Name = "label34";
             label34.Size = new Size(229, 20);
             label34.TabIndex = 4;
@@ -686,7 +634,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label33.Location = new Point(6, 119);
+            label33.Location = new Point(6, 157);
             label33.Name = "label33";
             label33.Size = new Size(246, 20);
             label33.TabIndex = 3;
@@ -696,7 +644,7 @@
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label32.Location = new Point(6, 71);
+            label32.Location = new Point(6, 89);
             label32.Name = "label32";
             label32.Size = new Size(253, 20);
             label32.TabIndex = 2;
@@ -706,7 +654,7 @@
             // 
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label31.Location = new Point(6, 47);
+            label31.Location = new Point(6, 57);
             label31.Name = "label31";
             label31.Size = new Size(252, 20);
             label31.TabIndex = 1;
@@ -716,7 +664,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label30.Location = new Point(6, 24);
+            label30.Location = new Point(6, 27);
             label30.Name = "label30";
             label30.Size = new Size(231, 20);
             label30.TabIndex = 0;
@@ -730,7 +678,7 @@
             groupBox10.Controls.Add(label38);
             groupBox10.Controls.Add(label41);
             groupBox10.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox10.Location = new Point(7, 329);
+            groupBox10.Location = new Point(446, 17);
             groupBox10.Name = "groupBox10";
             groupBox10.Size = new Size(315, 150);
             groupBox10.TabIndex = 7;
@@ -778,7 +726,7 @@
             groupBox11.Controls.Add(label39);
             groupBox11.Controls.Add(label40);
             groupBox11.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox11.Location = new Point(389, 329);
+            groupBox11.Location = new Point(446, 198);
             groupBox11.Name = "groupBox11";
             groupBox11.Size = new Size(315, 150);
             groupBox11.TabIndex = 8;
@@ -857,6 +805,22 @@
             groupBox12.TabIndex = 9;
             groupBox12.TabStop = false;
             groupBox12.Text = "Geometria Global";
+            // 
+            // textBox19
+            // 
+            textBox19.Location = new Point(18, 159);
+            textBox19.Name = "textBox19";
+            textBox19.Size = new Size(149, 27);
+            textBox19.TabIndex = 5;
+            // 
+            // label57
+            // 
+            label57.AutoSize = true;
+            label57.Location = new Point(18, 135);
+            label57.Name = "label57";
+            label57.Size = new Size(242, 20);
+            label57.TabIndex = 4;
+            label57.Text = "Comprimento total a ser protegido";
             // 
             // textBox5
             // 
@@ -1168,6 +1132,42 @@
             label54.TabIndex = 5;
             label54.Text = "Número de chumbadores por montante:";
             // 
+            // Classes
+            // 
+            Classes.HeaderText = "Classes";
+            Classes.Name = "Classes";
+            Classes.ReadOnly = true;
+            // 
+            // Fcok
+            // 
+            Fcok.HeaderText = "Fcok(Mpa)";
+            Fcok.Name = "Fcok";
+            Fcok.ReadOnly = true;
+            // 
+            // Fvk
+            // 
+            Fvk.HeaderText = "Fvk(MPa)";
+            Fvk.Name = "Fvk";
+            Fvk.ReadOnly = true;
+            // 
+            // E
+            // 
+            E.HeaderText = "E(MPa)";
+            E.Name = "E";
+            E.ReadOnly = true;
+            // 
+            // Pbasm
+            // 
+            Pbasm.HeaderText = "Pbasm(kg/m³)";
+            Pbasm.Name = "Pbasm";
+            Pbasm.ReadOnly = true;
+            // 
+            // Paparente
+            // 
+            Paparente.HeaderText = "Paparente(kg/m³)";
+            Paparente.Name = "Paparente";
+            Paparente.ReadOnly = true;
+            // 
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPage1);
@@ -1178,22 +1178,6 @@
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(1097, 612);
             tabControl1.TabIndex = 0;
-            // 
-            // textBox19
-            // 
-            textBox19.Location = new Point(18, 159);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(149, 27);
-            textBox19.TabIndex = 5;
-            // 
-            // label57
-            // 
-            label57.AutoSize = true;
-            label57.Location = new Point(18, 135);
-            label57.Name = "label57";
-            label57.Size = new Size(242, 20);
-            label57.TabIndex = 4;
-            label57.Text = "Comprimento total a ser protegido";
             // 
             // Form1
             // 
@@ -1223,7 +1207,6 @@
             tabControl2.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
             groupBox8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox9.ResumeLayout(false);
             groupBox9.PerformLayout();
             groupBox10.ResumeLayout(false);
@@ -1343,7 +1326,6 @@
         private TabPage tabPage4;
         private TabPage tabPage5;
         private PictureBox pictureBox1;
-        private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn Classes;
         private DataGridViewTextBoxColumn Fcok;
         private DataGridViewTextBoxColumn Fvk;

@@ -5,14 +5,6 @@ namespace GCSEG
         public Form1()
         {
             InitializeComponent();
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.Rows.Add("C-20", "20", "4", "3500", "400", "500");
-            dataGridView1.Rows.Add("C-25", "25", "5", "8500", "450", "550");
-            dataGridView1.Rows.Add("C-30", "30", "6", "14500", "500", "600");
-            dataGridView1.Rows.Add("D-20", "20", "4", "9500", "500", "650");
-            dataGridView1.Rows.Add("D-30", "30", "5", "14500", "650", "800");
-            dataGridView1.Rows.Add("D-40", "40", "6", "19500", "750", "950");
-            dataGridView1.Rows.Add("D-60", "50", "8", "24500", "800", "1000");
         }
 
         private async void button1_Click(object sender, EventArgs e)

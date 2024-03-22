@@ -114,9 +114,6 @@ namespace GCSEG
             textProgressBar3 = new TextProgressBar();
             textProgressBar2 = new TextProgressBar();
             textProgressBar1 = new TextProgressBar();
-            groupBox17 = new GroupBox();
-            button1 = new Button();
-            label72 = new Label();
             progressBar1 = new TextProgressBar();
             label66 = new Label();
             label63 = new Label();
@@ -137,6 +134,9 @@ namespace GCSEG
             label79 = new Label();
             tabPage6 = new TabPage();
             groupBox16 = new GroupBox();
+            groupBox17 = new GroupBox();
+            button1 = new Button();
+            label72 = new Label();
             label67 = new Label();
             label68 = new Label();
             label69 = new Label();
@@ -174,11 +174,11 @@ namespace GCSEG
             groupBox9.SuspendLayout();
             tabPage4.SuspendLayout();
             groupBox14.SuspendLayout();
-            groupBox17.SuspendLayout();
             tabPage5.SuspendLayout();
             groupBox15.SuspendLayout();
             tabPage6.SuspendLayout();
             groupBox16.SuspendLayout();
+            groupBox17.SuspendLayout();
             tabPage7.SuspendLayout();
             SuspendLayout();
             // 
@@ -914,7 +914,6 @@ namespace GCSEG
             groupBox14.Controls.Add(textProgressBar3);
             groupBox14.Controls.Add(textProgressBar2);
             groupBox14.Controls.Add(textProgressBar1);
-            groupBox14.Controls.Add(groupBox17);
             groupBox14.Controls.Add(progressBar1);
             groupBox14.Controls.Add(label66);
             groupBox14.Controls.Add(label63);
@@ -1079,38 +1078,6 @@ namespace GCSEG
             textProgressBar1.TextColor = Color.Black;
             textProgressBar1.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             textProgressBar1.VisualMode = ProgressBarDisplayMode.Percentage;
-            // 
-            // groupBox17
-            // 
-            groupBox17.Controls.Add(button1);
-            groupBox17.Controls.Add(label72);
-            groupBox17.Location = new Point(461, 157);
-            groupBox17.Name = "groupBox17";
-            groupBox17.Size = new Size(341, 131);
-            groupBox17.TabIndex = 14;
-            groupBox17.TabStop = false;
-            groupBox17.Text = "Resultado do dimensionamento";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.SpringGreen;
-            button1.Location = new Point(12, 80);
-            button1.Name = "button1";
-            button1.Size = new Size(323, 38);
-            button1.TabIndex = 1;
-            button1.Text = "Visualizar Quantitativo";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // label72
-            // 
-            label72.AutoSize = true;
-            label72.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label72.Location = new Point(6, 42);
-            label72.Name = "label72";
-            label72.Size = new Size(69, 25);
-            label72.TabIndex = 0;
-            label72.Text = "label72";
             // 
             // progressBar1
             // 
@@ -1294,6 +1261,7 @@ namespace GCSEG
             // 
             // groupBox16
             // 
+            groupBox16.Controls.Add(groupBox17);
             groupBox16.Controls.Add(label67);
             groupBox16.Controls.Add(label68);
             groupBox16.Controls.Add(label69);
@@ -1310,6 +1278,38 @@ namespace GCSEG
             groupBox16.TabIndex = 1;
             groupBox16.TabStop = false;
             groupBox16.Text = "VERIFICAÇÃO PARA ESTADO LIMITE ULTIMO  (ELU)";
+            // 
+            // groupBox17
+            // 
+            groupBox17.Controls.Add(button1);
+            groupBox17.Controls.Add(label72);
+            groupBox17.Location = new Point(499, 242);
+            groupBox17.Name = "groupBox17";
+            groupBox17.Size = new Size(341, 131);
+            groupBox17.TabIndex = 15;
+            groupBox17.TabStop = false;
+            groupBox17.Text = "Resultado do dimensionamento";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.SpringGreen;
+            button1.Location = new Point(12, 80);
+            button1.Name = "button1";
+            button1.Size = new Size(323, 38);
+            button1.TabIndex = 1;
+            button1.Text = "Visualizar Quantitativo";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
+            // 
+            // label72
+            // 
+            label72.AutoSize = true;
+            label72.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label72.Location = new Point(6, 42);
+            label72.Name = "label72";
+            label72.Size = new Size(69, 25);
+            label72.TabIndex = 0;
+            label72.Text = "label72";
             // 
             // label67
             // 
@@ -1523,14 +1523,14 @@ namespace GCSEG
             tabPage4.ResumeLayout(false);
             groupBox14.ResumeLayout(false);
             groupBox14.PerformLayout();
-            groupBox17.ResumeLayout(false);
-            groupBox17.PerformLayout();
             tabPage5.ResumeLayout(false);
             groupBox15.ResumeLayout(false);
             groupBox15.PerformLayout();
             tabPage6.ResumeLayout(false);
             groupBox16.ResumeLayout(false);
             groupBox16.PerformLayout();
+            groupBox17.ResumeLayout(false);
+            groupBox17.PerformLayout();
             tabPage7.ResumeLayout(false);
             tabPage7.PerformLayout();
             ResumeLayout(false);
@@ -1639,7 +1639,6 @@ namespace GCSEG
         private Label label77;
         private Label label80;
         private Label label81;
-        private GroupBox groupBox17;
         private TextProgressBar progressBar1;
         private TextProgressBar textProgressBar12;
         private TextProgressBar textProgressBar11;
@@ -1653,8 +1652,6 @@ namespace GCSEG
         private TextProgressBar textProgressBar3;
         private TextProgressBar textProgressBar2;
         private TextProgressBar textProgressBar1;
-        private Label label72;
-        private Button button1;
         private TabPage tabPage7;
         private Label label86;
         private Label label85;
@@ -1663,5 +1660,8 @@ namespace GCSEG
         private Label label82;
         private Label label74;
         private Label label73;
+        private GroupBox groupBox17;
+        private Button button1;
+        private Label label72;
     }
 }
