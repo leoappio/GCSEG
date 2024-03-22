@@ -16,6 +16,7 @@ namespace GCSEG
         private void Form2_Load(object sender, EventArgs e)
         {
             RealizarCalculos();
+            tabControl1.TabPages.Remove(tabPage7);
         }
 
         private void RealizarCalculos()
@@ -60,7 +61,7 @@ namespace GCSEG
             var Mm = Math.Abs(+(55 * Vr) - (Vm * 62.5));
             var va = Math.Abs((0.0667 * Vr) + (0.55555 * Vtm) + (Vts));
 
-            double constante = (_parametros.Dn / 112.5); 
+            double constante = (_parametros.Dn / 112.5);
 
             double tgrad = Math.Atan(constante);
 
@@ -146,32 +147,88 @@ namespace GCSEG
             label41.Text = $"Vsd travessa superior: {Tvts:F4}KN/cm²";
             label53.Text = $"Vsd travessa média: {Tvtm:F4}KN/cm²";
             label52.Text = $"Vsd rodapé: {Tvr:F4}KN/cm²";
-            label51.Text = $"Vsd montante: {Tvmo:F4}KN/cm²";     
+            label51.Text = $"Vsd montante: {Tvmo:F4}KN/cm²";
 
             //Tab4
+
             label54.Text = $"Compressão na travessa superior ";
-            progressBar1.Value = (int)(-Tcts / fcod * 100);
-            label55.Text = $"Tração na travessa superior: {((Ttts / ftod) * 100):F2}%";
-            label56.Text = $"Cisalhamento na travessa superior: {((Tvts / fvd) * 100):F2}%";
+            var elu1 = (int)(-Tcts / fcod * 100);
+            progressBar1.Value = elu1;
+            label55.Text = $"Tração na travessa superior";
+            var elu2 = (int)((Ttts / ftod) * 100);
+            textProgressBar1.Value = elu2;
+            label56.Text = $"Cisalhamento na travessa superior";
+            var elu3 = (int)((Tvts / fvd) * 100);
+            textProgressBar2.Value = elu3;
 
 
-            label59.Text = $"Compressão na travessa média: {((-Tctm / fcod) * 100):F2}%";
-            label58.Text = $"Tração na travessa média: {((Tttm / ftod) * 100):F2}%";
-            label57.Text = $"Cisalhamento na travessa média: {((Tvtm / fvd) * 100):F2}%";
+            label59.Text = $"Compressão na travessa média";
+            var elu4 = (int)((-Tctm / fcod) * 100);
+            textProgressBar3.Value = elu4;
+            label58.Text = $"Tração na travessa média";
+            var elu5 = (int)((Tttm / ftod) * 100);
+            textProgressBar4.Value = elu5;
+            label57.Text = $"Cisalhamento na travessa média";
+            var elu6 = (int)((Tvtm / fvd) * 100);
+            textProgressBar5.Value = elu6;
 
-            label62.Text = $"Compressão no rodapé: {((-Tcr / fcod) * 100):F2}%";
-            label61.Text = $"Tração no rodapé: {((Ttr / ftod) * 100):F2}%";
-            label60.Text = $"Cisalhamento no rodapé: {((Tvr / fvd) * 100):F2}%";
+            label62.Text = $"Compressão no rodapé";
+            var elu7 = (int)((-Tcr / fcod) * 100);
+            textProgressBar6.Value = elu7;
+            label61.Text = $"Tração no rodapé";
+            var elu8 = (int)((Ttr / ftod) * 100);
+            textProgressBar7.Value = elu8;
+            label60.Text = $"Cisalhamento no rodapé";
+            var elu9 = (int)((Tvr / fvd) * 100);
+            textProgressBar8.Value = elu9;
 
-            label65.Text = $"Compressão no montante: {((-Tcmo / fcod) * 100):F2}%";
-            label64.Text = $"Tração no montante: {((Ttmo / ftod) * 100):F2}%";
-            label63.Text = $"Cisalhamento no montante: {((Tvmo / fvd) * 100):F2}%";
+            label65.Text = $"Compressão no montante";
+            var elu10 = (int)((-Tcmo / fcod) * 100);
+            textProgressBar9.Value = elu10;
+            label64.Text = $"Tração no montante";
+            var elu11 = (int)((Ttmo / ftod) * 100);
+            textProgressBar10.Value = elu11;
+            label63.Text = $"Cisalhamento no montante";
+            var elu12 = (int)((Tvmo / fvd) * 100);
+            textProgressBar11.Value = elu12;
 
-            label66.Text = $"Tração na mão francesa: {((Ttmf / ftod) * 100):F2}%";
+            label66.Text = $"Tração na mão francesa";
+            var elu13 = (int)((Ttmf / ftod) * 100);
+            textProgressBar12.Value = elu13;
+
 
             //Tab5
             var U = (5 * 0.009 * Math.Pow(_parametros.L, 4)) / (384 * Eef * ((_parametros.Tsb * Math.Pow(_parametros.Tsh, 3)) / 12));
             label78.Text = $"Deflexão máxima na travessa superior: {U:F3}cm";
+
+            if (elu1 <= 100 &&
+                elu2 <= 100 &&
+                elu3 <= 100 &&
+                elu4 <= 100 &&
+                elu5 <= 100 &&
+                elu6 <= 100 &&
+                elu7 <= 100 &&
+                elu8 <= 100 &&
+                elu9 <= 100 &&
+                elu10 <= 100 &&
+                elu11 <= 100 &&
+                elu12 <= 100 &&
+                elu13 <= 100)
+            {
+                label72.ForeColor = Color.Green;
+                label72.Text = "Dimensionamento bem-sucedido";
+
+                if (U > 7.61)
+                {
+                    button1.Visible = false;
+                }
+            }
+            else
+            {
+                label72.ForeColor = Color.Red;
+                label72.Text = "Necessário redimensionar";
+                button1.Visible = false;
+            }
 
             //Tab6
             var t = Math.Cos(tgrad) * Ncmf;
@@ -203,6 +260,15 @@ namespace GCSEG
             label68.Text = $"Comprimento de ancoragem mínimo: {Lc:F2}cm";
             label67.Text = $"Espaçamento mínimo entre chumbadores: {Dch:F2}cm";
 
+            //Tab7
+            label73.Text = $"Consumo de madeira travessa superior: {(_parametros.ComprimentoTotal):F2} metros de madeira {(_parametros.Tsb * _parametros.Tsh):F2}";
+            label74.Text = $"Consumo de madeira travessa media: {(_parametros.ComprimentoTotal):F2} metros de madeira {(_parametros.Tmb * _parametros.Tmh):F2}";
+            label82.Text = $"Consumo de madeira rodapé: {(_parametros.ComprimentoTotal):F2} metros de madeira {(_parametros.Trb * _parametros.Trh):F2}";
+            label83.Text = $"Consumo de madeira montantes: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * 1.20:F2} metros de madeira {(_parametros.Mb * _parametros.Mh):F2}";
+            label84.Text = $"Consumo de mãos francesas: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * (1.20 / Math.Sin(An)):F2} metros de madeira {(_parametros.Mfb * _parametros.Mfh):F2}";
+            label85.Text = $"Consumo de chumbadores: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * _parametros.Nch:F2} unidades";
+            label86.Text = $"Consumo de pregos: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * 13:F2} unidades";
+
         }
 
         private void groupBox5_Enter(object sender, EventArgs e)
@@ -213,6 +279,13 @@ namespace GCSEG
         private void label41_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button1.Visible = false;
+            tabControl1.TabPages.Insert(6, tabPage7);
+            tabControl1.SelectedIndex = 6;
         }
     }
 }

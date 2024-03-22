@@ -21,7 +21,7 @@ namespace GCSEG
 
             string classeMadeira;
             double fcok, ftok, fvk, eparam, pa, kmod1, kmod2, kmod3, l, dn,
-                tsb, tsh, tmb, tmh, trb, trh, mb, mh, mfb, mfh, nch, fu, fck;
+                tsb, tsh, tmb, tmh, trb, trh, mb, mh, mfb, mfh, nch, fu, fck, comprimentoTotal;
 
             classeMadeira = comboBox1.Text;
 
@@ -47,6 +47,7 @@ namespace GCSEG
             resultadosConversao.Add(double.TryParse(textBox16.Text, out nch));
             resultadosConversao.Add(double.TryParse(textBox17.Text, out fu));
             resultadosConversao.Add(double.TryParse(textBox18.Text, out fck));
+            resultadosConversao.Add(double.TryParse(textBox19.Text, out comprimentoTotal));
 
             if (resultadosConversao.All(conversaoSucedida => conversaoSucedida))
             {
@@ -76,6 +77,7 @@ namespace GCSEG
                     Nch = nch,
                     Fu = fu,
                     Fck = fck,
+                    ComprimentoTotal = comprimentoTotal
                 };
 
                 await ShowProgressFormAsync();

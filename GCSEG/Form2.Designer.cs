@@ -102,7 +102,21 @@ namespace GCSEG
             label20 = new Label();
             tabPage4 = new TabPage();
             groupBox14 = new GroupBox();
+            textProgressBar12 = new TextProgressBar();
+            textProgressBar11 = new TextProgressBar();
+            textProgressBar10 = new TextProgressBar();
+            textProgressBar9 = new TextProgressBar();
+            textProgressBar8 = new TextProgressBar();
+            textProgressBar7 = new TextProgressBar();
+            textProgressBar6 = new TextProgressBar();
+            textProgressBar5 = new TextProgressBar();
+            textProgressBar4 = new TextProgressBar();
+            textProgressBar3 = new TextProgressBar();
+            textProgressBar2 = new TextProgressBar();
+            textProgressBar1 = new TextProgressBar();
             groupBox17 = new GroupBox();
+            button1 = new Button();
+            label72 = new Label();
             progressBar1 = new TextProgressBar();
             label66 = new Label();
             label63 = new Label();
@@ -133,19 +147,14 @@ namespace GCSEG
             label77 = new Label();
             label80 = new Label();
             label81 = new Label();
-            textProgressBar1 = new TextProgressBar();
-            textProgressBar2 = new TextProgressBar();
-            textProgressBar3 = new TextProgressBar();
-            textProgressBar4 = new TextProgressBar();
-            textProgressBar5 = new TextProgressBar();
-            textProgressBar6 = new TextProgressBar();
-            textProgressBar7 = new TextProgressBar();
-            textProgressBar8 = new TextProgressBar();
-            textProgressBar9 = new TextProgressBar();
-            textProgressBar10 = new TextProgressBar();
-            textProgressBar11 = new TextProgressBar();
-            textProgressBar12 = new TextProgressBar();
-            label72 = new Label();
+            tabPage7 = new TabPage();
+            label86 = new Label();
+            label85 = new Label();
+            label84 = new Label();
+            label83 = new Label();
+            label82 = new Label();
+            label74 = new Label();
+            label73 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -170,6 +179,7 @@ namespace GCSEG
             groupBox15.SuspendLayout();
             tabPage6.SuspendLayout();
             groupBox16.SuspendLayout();
+            tabPage7.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
@@ -396,6 +406,7 @@ namespace GCSEG
             tabControl1.Controls.Add(tabPage4);
             tabControl1.Controls.Add(tabPage5);
             tabControl1.Controls.Add(tabPage6);
+            tabControl1.Controls.Add(tabPage7);
             tabControl1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
@@ -925,15 +936,181 @@ namespace GCSEG
             groupBox14.TabStop = false;
             groupBox14.Text = "VERIFICAÇÃO PARA ESTADO LIMITE ULTIMO  (ELU)";
             // 
+            // textProgressBar12
+            // 
+            textProgressBar12.CustomText = "";
+            textProgressBar12.Location = new Point(266, 422);
+            textProgressBar12.Name = "textProgressBar12";
+            textProgressBar12.ProgressColor = Color.LimeGreen;
+            textProgressBar12.Size = new Size(135, 23);
+            textProgressBar12.TabIndex = 26;
+            textProgressBar12.TextColor = Color.Black;
+            textProgressBar12.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar12.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar11
+            // 
+            textProgressBar11.CustomText = "";
+            textProgressBar11.Location = new Point(266, 381);
+            textProgressBar11.Name = "textProgressBar11";
+            textProgressBar11.ProgressColor = Color.LimeGreen;
+            textProgressBar11.Size = new Size(135, 23);
+            textProgressBar11.TabIndex = 25;
+            textProgressBar11.TextColor = Color.Black;
+            textProgressBar11.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar11.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar10
+            // 
+            textProgressBar10.CustomText = "";
+            textProgressBar10.Location = new Point(266, 350);
+            textProgressBar10.Name = "textProgressBar10";
+            textProgressBar10.ProgressColor = Color.LimeGreen;
+            textProgressBar10.Size = new Size(135, 23);
+            textProgressBar10.TabIndex = 24;
+            textProgressBar10.TextColor = Color.Black;
+            textProgressBar10.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar10.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar9
+            // 
+            textProgressBar9.CustomText = "";
+            textProgressBar9.Location = new Point(266, 320);
+            textProgressBar9.Name = "textProgressBar9";
+            textProgressBar9.ProgressColor = Color.LimeGreen;
+            textProgressBar9.Size = new Size(135, 23);
+            textProgressBar9.TabIndex = 23;
+            textProgressBar9.TextColor = Color.Black;
+            textProgressBar9.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar9.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar8
+            // 
+            textProgressBar8.CustomText = "";
+            textProgressBar8.Location = new Point(266, 286);
+            textProgressBar8.Name = "textProgressBar8";
+            textProgressBar8.ProgressColor = Color.LimeGreen;
+            textProgressBar8.Size = new Size(135, 23);
+            textProgressBar8.TabIndex = 22;
+            textProgressBar8.TextColor = Color.Black;
+            textProgressBar8.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar8.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar7
+            // 
+            textProgressBar7.CustomText = "";
+            textProgressBar7.Location = new Point(266, 255);
+            textProgressBar7.Name = "textProgressBar7";
+            textProgressBar7.ProgressColor = Color.LimeGreen;
+            textProgressBar7.Size = new Size(135, 23);
+            textProgressBar7.TabIndex = 21;
+            textProgressBar7.TextColor = Color.Black;
+            textProgressBar7.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar7.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar6
+            // 
+            textProgressBar6.CustomText = "";
+            textProgressBar6.Location = new Point(266, 225);
+            textProgressBar6.Name = "textProgressBar6";
+            textProgressBar6.ProgressColor = Color.LimeGreen;
+            textProgressBar6.Size = new Size(135, 23);
+            textProgressBar6.TabIndex = 20;
+            textProgressBar6.TextColor = Color.Black;
+            textProgressBar6.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar6.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar5
+            // 
+            textProgressBar5.CustomText = "";
+            textProgressBar5.Location = new Point(266, 188);
+            textProgressBar5.Name = "textProgressBar5";
+            textProgressBar5.ProgressColor = Color.LimeGreen;
+            textProgressBar5.Size = new Size(135, 23);
+            textProgressBar5.TabIndex = 19;
+            textProgressBar5.TextColor = Color.Black;
+            textProgressBar5.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar5.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar4
+            // 
+            textProgressBar4.CustomText = "";
+            textProgressBar4.Location = new Point(266, 157);
+            textProgressBar4.Name = "textProgressBar4";
+            textProgressBar4.ProgressColor = Color.LimeGreen;
+            textProgressBar4.Size = new Size(135, 23);
+            textProgressBar4.TabIndex = 18;
+            textProgressBar4.TextColor = Color.Black;
+            textProgressBar4.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar4.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar3
+            // 
+            textProgressBar3.CustomText = "";
+            textProgressBar3.Location = new Point(266, 127);
+            textProgressBar3.Name = "textProgressBar3";
+            textProgressBar3.ProgressColor = Color.LimeGreen;
+            textProgressBar3.Size = new Size(135, 23);
+            textProgressBar3.TabIndex = 17;
+            textProgressBar3.TextColor = Color.Black;
+            textProgressBar3.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar3.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar2
+            // 
+            textProgressBar2.CustomText = "";
+            textProgressBar2.Location = new Point(266, 96);
+            textProgressBar2.Name = "textProgressBar2";
+            textProgressBar2.ProgressColor = Color.LimeGreen;
+            textProgressBar2.Size = new Size(135, 23);
+            textProgressBar2.TabIndex = 16;
+            textProgressBar2.TextColor = Color.Black;
+            textProgressBar2.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar2.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
+            // textProgressBar1
+            // 
+            textProgressBar1.CustomText = "";
+            textProgressBar1.Location = new Point(266, 65);
+            textProgressBar1.Name = "textProgressBar1";
+            textProgressBar1.ProgressColor = Color.LimeGreen;
+            textProgressBar1.Size = new Size(135, 23);
+            textProgressBar1.TabIndex = 15;
+            textProgressBar1.TextColor = Color.Black;
+            textProgressBar1.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            textProgressBar1.VisualMode = ProgressBarDisplayMode.Percentage;
+            // 
             // groupBox17
             // 
+            groupBox17.Controls.Add(button1);
             groupBox17.Controls.Add(label72);
             groupBox17.Location = new Point(461, 157);
             groupBox17.Name = "groupBox17";
-            groupBox17.Size = new Size(341, 100);
+            groupBox17.Size = new Size(341, 131);
             groupBox17.TabIndex = 14;
             groupBox17.TabStop = false;
             groupBox17.Text = "Resultado do dimensionamento";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.SpringGreen;
+            button1.Location = new Point(12, 80);
+            button1.Name = "button1";
+            button1.Size = new Size(323, 38);
+            button1.TabIndex = 1;
+            button1.Text = "Visualizar Quantitativo";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // label72
+            // 
+            label72.AutoSize = true;
+            label72.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label72.Location = new Point(6, 42);
+            label72.Name = "label72";
+            label72.Size = new Size(69, 25);
+            label72.TabIndex = 0;
+            label72.Text = "label72";
             // 
             // progressBar1
             // 
@@ -1224,159 +1401,85 @@ namespace GCSEG
             label81.TabIndex = 0;
             label81.Text = "label81";
             // 
-            // textProgressBar1
+            // tabPage7
             // 
-            textProgressBar1.CustomText = "";
-            textProgressBar1.Location = new Point(266, 65);
-            textProgressBar1.Name = "textProgressBar1";
-            textProgressBar1.ProgressColor = Color.LimeGreen;
-            textProgressBar1.Size = new Size(135, 23);
-            textProgressBar1.TabIndex = 15;
-            textProgressBar1.TextColor = Color.Black;
-            textProgressBar1.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar1.VisualMode = ProgressBarDisplayMode.Percentage;
+            tabPage7.Controls.Add(label86);
+            tabPage7.Controls.Add(label85);
+            tabPage7.Controls.Add(label84);
+            tabPage7.Controls.Add(label83);
+            tabPage7.Controls.Add(label82);
+            tabPage7.Controls.Add(label74);
+            tabPage7.Controls.Add(label73);
+            tabPage7.Location = new Point(4, 29);
+            tabPage7.Name = "tabPage7";
+            tabPage7.Padding = new Padding(3);
+            tabPage7.Size = new Size(915, 545);
+            tabPage7.TabIndex = 6;
+            tabPage7.Text = "Quantitativo";
+            tabPage7.UseVisualStyleBackColor = true;
             // 
-            // textProgressBar2
+            // label86
             // 
-            textProgressBar2.CustomText = "";
-            textProgressBar2.Location = new Point(266, 96);
-            textProgressBar2.Name = "textProgressBar2";
-            textProgressBar2.ProgressColor = Color.LimeGreen;
-            textProgressBar2.Size = new Size(135, 23);
-            textProgressBar2.TabIndex = 16;
-            textProgressBar2.TextColor = Color.Black;
-            textProgressBar2.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar2.VisualMode = ProgressBarDisplayMode.Percentage;
+            label86.AutoSize = true;
+            label86.Location = new Point(26, 356);
+            label86.Name = "label86";
+            label86.Size = new Size(58, 20);
+            label86.TabIndex = 6;
+            label86.Text = "label86";
             // 
-            // textProgressBar3
+            // label85
             // 
-            textProgressBar3.CustomText = "";
-            textProgressBar3.Location = new Point(266, 127);
-            textProgressBar3.Name = "textProgressBar3";
-            textProgressBar3.ProgressColor = Color.LimeGreen;
-            textProgressBar3.Size = new Size(135, 23);
-            textProgressBar3.TabIndex = 17;
-            textProgressBar3.TextColor = Color.Black;
-            textProgressBar3.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar3.VisualMode = ProgressBarDisplayMode.Percentage;
+            label85.AutoSize = true;
+            label85.Location = new Point(26, 299);
+            label85.Name = "label85";
+            label85.Size = new Size(58, 20);
+            label85.TabIndex = 5;
+            label85.Text = "label85";
             // 
-            // textProgressBar4
+            // label84
             // 
-            textProgressBar4.CustomText = "";
-            textProgressBar4.Location = new Point(266, 157);
-            textProgressBar4.Name = "textProgressBar4";
-            textProgressBar4.ProgressColor = Color.LimeGreen;
-            textProgressBar4.Size = new Size(135, 23);
-            textProgressBar4.TabIndex = 18;
-            textProgressBar4.TextColor = Color.Black;
-            textProgressBar4.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar4.VisualMode = ProgressBarDisplayMode.Percentage;
+            label84.AutoSize = true;
+            label84.Location = new Point(26, 246);
+            label84.Name = "label84";
+            label84.Size = new Size(58, 20);
+            label84.TabIndex = 4;
+            label84.Text = "label84";
             // 
-            // textProgressBar5
+            // label83
             // 
-            textProgressBar5.CustomText = "";
-            textProgressBar5.Location = new Point(266, 188);
-            textProgressBar5.Name = "textProgressBar5";
-            textProgressBar5.ProgressColor = Color.LimeGreen;
-            textProgressBar5.Size = new Size(135, 23);
-            textProgressBar5.TabIndex = 19;
-            textProgressBar5.TextColor = Color.Black;
-            textProgressBar5.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar5.VisualMode = ProgressBarDisplayMode.Percentage;
+            label83.AutoSize = true;
+            label83.Location = new Point(26, 191);
+            label83.Name = "label83";
+            label83.Size = new Size(58, 20);
+            label83.TabIndex = 3;
+            label83.Text = "label83";
             // 
-            // textProgressBar6
+            // label82
             // 
-            textProgressBar6.CustomText = "";
-            textProgressBar6.Location = new Point(266, 225);
-            textProgressBar6.Name = "textProgressBar6";
-            textProgressBar6.ProgressColor = Color.LimeGreen;
-            textProgressBar6.Size = new Size(135, 23);
-            textProgressBar6.TabIndex = 20;
-            textProgressBar6.TextColor = Color.Black;
-            textProgressBar6.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar6.VisualMode = ProgressBarDisplayMode.Percentage;
+            label82.AutoSize = true;
+            label82.Location = new Point(26, 134);
+            label82.Name = "label82";
+            label82.Size = new Size(58, 20);
+            label82.TabIndex = 2;
+            label82.Text = "label82";
             // 
-            // textProgressBar7
+            // label74
             // 
-            textProgressBar7.CustomText = "";
-            textProgressBar7.Location = new Point(266, 255);
-            textProgressBar7.Name = "textProgressBar7";
-            textProgressBar7.ProgressColor = Color.LimeGreen;
-            textProgressBar7.Size = new Size(135, 23);
-            textProgressBar7.TabIndex = 21;
-            textProgressBar7.TextColor = Color.Black;
-            textProgressBar7.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar7.VisualMode = ProgressBarDisplayMode.Percentage;
+            label74.AutoSize = true;
+            label74.Location = new Point(26, 81);
+            label74.Name = "label74";
+            label74.Size = new Size(58, 20);
+            label74.TabIndex = 1;
+            label74.Text = "label74";
             // 
-            // textProgressBar8
+            // label73
             // 
-            textProgressBar8.CustomText = "";
-            textProgressBar8.Location = new Point(266, 286);
-            textProgressBar8.Name = "textProgressBar8";
-            textProgressBar8.ProgressColor = Color.LimeGreen;
-            textProgressBar8.Size = new Size(135, 23);
-            textProgressBar8.TabIndex = 22;
-            textProgressBar8.TextColor = Color.Black;
-            textProgressBar8.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar8.VisualMode = ProgressBarDisplayMode.Percentage;
-            // 
-            // textProgressBar9
-            // 
-            textProgressBar9.CustomText = "";
-            textProgressBar9.Location = new Point(266, 320);
-            textProgressBar9.Name = "textProgressBar9";
-            textProgressBar9.ProgressColor = Color.LimeGreen;
-            textProgressBar9.Size = new Size(135, 23);
-            textProgressBar9.TabIndex = 23;
-            textProgressBar9.TextColor = Color.Black;
-            textProgressBar9.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar9.VisualMode = ProgressBarDisplayMode.Percentage;
-            // 
-            // textProgressBar10
-            // 
-            textProgressBar10.CustomText = "";
-            textProgressBar10.Location = new Point(266, 350);
-            textProgressBar10.Name = "textProgressBar10";
-            textProgressBar10.ProgressColor = Color.LimeGreen;
-            textProgressBar10.Size = new Size(135, 23);
-            textProgressBar10.TabIndex = 24;
-            textProgressBar10.TextColor = Color.Black;
-            textProgressBar10.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar10.VisualMode = ProgressBarDisplayMode.Percentage;
-            // 
-            // textProgressBar11
-            // 
-            textProgressBar11.CustomText = "";
-            textProgressBar11.Location = new Point(266, 381);
-            textProgressBar11.Name = "textProgressBar11";
-            textProgressBar11.ProgressColor = Color.LimeGreen;
-            textProgressBar11.Size = new Size(135, 23);
-            textProgressBar11.TabIndex = 25;
-            textProgressBar11.TextColor = Color.Black;
-            textProgressBar11.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar11.VisualMode = ProgressBarDisplayMode.Percentage;
-            // 
-            // textProgressBar12
-            // 
-            textProgressBar12.CustomText = "";
-            textProgressBar12.Location = new Point(266, 422);
-            textProgressBar12.Name = "textProgressBar12";
-            textProgressBar12.ProgressColor = Color.LimeGreen;
-            textProgressBar12.Size = new Size(135, 23);
-            textProgressBar12.TabIndex = 26;
-            textProgressBar12.TextColor = Color.Black;
-            textProgressBar12.TextFont = new Font("Times New Roman", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            textProgressBar12.VisualMode = ProgressBarDisplayMode.Percentage;
-            // 
-            // label72
-            // 
-            label72.AutoSize = true;
-            label72.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            label72.Location = new Point(6, 42);
-            label72.Name = "label72";
-            label72.Size = new Size(69, 25);
-            label72.TabIndex = 0;
-            label72.Text = "label72";
+            label73.AutoSize = true;
+            label73.Location = new Point(26, 30);
+            label73.Name = "label73";
+            label73.Size = new Size(58, 20);
+            label73.TabIndex = 0;
+            label73.Text = "label73";
             // 
             // Form2
             // 
@@ -1428,6 +1531,8 @@ namespace GCSEG
             tabPage6.ResumeLayout(false);
             groupBox16.ResumeLayout(false);
             groupBox16.PerformLayout();
+            tabPage7.ResumeLayout(false);
+            tabPage7.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1549,5 +1654,14 @@ namespace GCSEG
         private TextProgressBar textProgressBar2;
         private TextProgressBar textProgressBar1;
         private Label label72;
+        private Button button1;
+        private TabPage tabPage7;
+        private Label label86;
+        private Label label85;
+        private Label label84;
+        private Label label83;
+        private Label label82;
+        private Label label74;
+        private Label label73;
     }
 }

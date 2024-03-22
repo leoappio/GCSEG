@@ -26,5 +26,6 @@
         public double Nch { get; set; }
         public double Fu { get; set; }
         public double Fck { get; set; }
+        public double ComprimentoTotal { get; set; }
     }
 }
