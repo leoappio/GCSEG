@@ -1,8 +1,4 @@
-﻿using System.Security.Cryptography;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-namespace GCSEG
+﻿namespace GCSEG
 {
     public partial class Form2 : Form
     {
@@ -261,13 +257,13 @@ namespace GCSEG
             label67.Text = $"Espaçamento mínimo entre chumbadores: {Dch:F2}cm";
 
             //Tab7
-            label73.Text = $"Consumo de madeira travessa superior: {(_parametros.ComprimentoTotal):F2} metros de madeira {(_parametros.Tsb * _parametros.Tsh):F2}";
-            label74.Text = $"Consumo de madeira travessa media: {(_parametros.ComprimentoTotal):F2} metros de madeira {(_parametros.Tmb * _parametros.Tmh):F2}";
-            label82.Text = $"Consumo de madeira rodapé: {(_parametros.ComprimentoTotal):F2} metros de madeira {(_parametros.Trb * _parametros.Trh):F2}";
-            label83.Text = $"Consumo de madeira montantes: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * 1.20:F2} metros de madeira {(_parametros.Mb * _parametros.Mh):F2}";
-            label84.Text = $"Consumo de mãos francesas: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * (1.20 / Math.Sin(An)):F2} metros de madeira {(_parametros.Mfb * _parametros.Mfh):F2}";
-            label85.Text = $"Consumo de chumbadores: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * _parametros.Nch:F2} unidades";
-            label86.Text = $"Consumo de pregos: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * 13:F2} unidades";
+            label73.Text = $"Consumo de madeira travessa superior: {(_parametros.ComprimentoTotal):F2} metros de madeira {_parametros.Tsb:F2}X{_parametros.Tsh:F2}";
+            label74.Text = $"Consumo de madeira travessa media: {(_parametros.ComprimentoTotal):F2} metros de madeira {_parametros.Tmb:F2}X{_parametros.Tmh:F2}";
+            label82.Text = $"Consumo de madeira rodapé: {(_parametros.ComprimentoTotal):F2} metros de madeira {_parametros.Trb:F2}X{_parametros.Trh:F2}";
+            label83.Text = $"Consumo de madeira montantes: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * 1.20:F2} metros de madeira {_parametros.Mb:F2}X{_parametros.Mh:F2}";
+            label84.Text = $"Consumo de mãos francesas: {((_parametros.ComprimentoTotal / _parametros.L) + 2) * (1.20 / Math.Sin(An)):F2} metros de madeira {_parametros.Mfb:F2} X {_parametros.Mfh:F2}";
+            label85.Text = $"Consumo de chumbadores: {Math.Ceiling(((_parametros.ComprimentoTotal / _parametros.L) + 2) * _parametros.Nch):F2} unidades";
+            label86.Text = $"Consumo de pregos: {Math.Ceiling(((_parametros.ComprimentoTotal / _parametros.L) + 2) * 13):F2} unidades";
 
         }
 
