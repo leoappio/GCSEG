@@ -818,9 +818,9 @@
             label57.AutoSize = true;
             label57.Location = new Point(18, 135);
             label57.Name = "label57";
-            label57.Size = new Size(242, 20);
+            label57.Size = new Size(284, 20);
             label57.TabIndex = 4;
-            label57.Text = "Comprimento total a ser protegido";
+            label57.Text = "Comprimento total a ser protegido em m";
             // 
             // textBox5
             // 
