@@ -44,13 +44,13 @@ namespace GCSEG
             var fvd = ((Kmod * _parametros.Fvk / 10) / gamav);
             var Eef = ((_parametros.E / 10) * Kmod);
 
-            var Vts = (0.009 * 1 * _parametros.L) / 2;
-            var Vtm = (0.0066 * 1 * _parametros.L) / 2;
-            var Vr = (0.0022 * 1 * _parametros.L) / 2;
+            var Vts = (0.009 * _parametros.L) / 2;
+            var Vtm = (0.0066 * _parametros.L) / 2;
+            var Vr = (0.0022 * _parametros.L) / 2;
 
-            var Mts = (0.009 * 1 * Math.Pow(_parametros.L, 2)) / 8;
-            var Mtm = (0.0066 * 1 * Math.Pow(_parametros.L, 2)) / 8;
-            var Mr = (0.0022 * 1 * Math.Pow(_parametros.L, 2)) / 8;
+            var Mts = (0.009 * Math.Pow(_parametros.L, 2)) / 8.0;
+            var Mtm = (0.0066 * Math.Pow(_parametros.L, 2)) / 8.0;
+            var Mr = (0.0022 * Math.Pow(_parametros.L, 2)) / 8;
 
             var Vm = Math.Abs(-(0.93333 * Vr) - (0.44445 * Vtm));
             var Mm = Math.Abs(+(55 * Vr) - (Vm * 62.5));
@@ -82,11 +82,11 @@ namespace GCSEG
             label30.Text = string.Format(CultureInfo.InvariantCulture, "Momento máximo no montante: {0:F2}KN*cm", Mm);
 
             //Tab3
-            var Wts = _parametros.Tsb * Math.Pow(_parametros.Tsh, 2) / 6;
-            var Wtm = (_parametros.Tmb * Math.Pow(_parametros.Tmh, 2)) / 6;
-            var Wr = (_parametros.Trb * Math.Pow(_parametros.Trh, 2)) / 6;
-            var Wmo = (_parametros.Mb * Math.Pow(_parametros.Mh, 2)) / 6;
-            var Wmf = (_parametros.Mfb * Math.Pow(_parametros.Mfh, 2)) / 6;
+            var Wts = _parametros.Tsb * Math.Pow(_parametros.Tsh, 2) / 6.0;
+            var Wtm = (_parametros.Tmb * Math.Pow(_parametros.Tmh, 2)) / 6.0;
+            var Wr = (_parametros.Trb * Math.Pow(_parametros.Trh, 2)) / 6.0;
+            var Wmo = (_parametros.Mb * Math.Pow(_parametros.Mh, 2)) / 6.0;
+            var Wmf = (_parametros.Mfb * Math.Pow(_parametros.Mfh, 2)) / 6.0;
 
             var Ats = _parametros.Tsb * _parametros.Tsh;
             var Atm = _parametros.Tmb * _parametros.Tmh;
@@ -96,16 +96,16 @@ namespace GCSEG
 
             var Tcts = -(Mts / Wts);
             var Ttts = (Mts / Wts);
-            var Tvts = (3 / 2) * (Vts / Ats);
+            var Tvts = 1.5 * (Vts / Ats);
             var Tctm = -(Mtm / Wtm);
             var Tttm = (Mtm / Wtm);
-            var Tvtm = (3 / 2) * (Vtm / Atm);
+            var Tvtm = 1.5 * (Vtm / Atm);
             var Tcr = -(Mr / Wr);
             var Ttr = (Mr / Wr);
-            var Tvr = (3 / 2) * (Vr / Ar);
+            var Tvr = 1.5 * (Vr / Ar);
             var Tcmo = -(Mm / Wmo);
             var Ttmo = (Mm / Wmo);
-            var Tvmo = (3 / 2) * (Vm / Amo);
+            var Tvmo = 1.5 * (Vm / Amo);
             var Ttmf = Ncmf / Amf;
 
 
@@ -186,7 +186,7 @@ namespace GCSEG
 
 
             //Tab5
-            var U = (5 * 0.009 * Math.Pow(_parametros.L, 4)) / (384 * Eef * ((_parametros.Tsb * Math.Pow(_parametros.Tsh, 3)) / 12));
+            var U = (5.0 * 0.009 * Math.Pow(_parametros.L, 4)) / (384.0 * Eef * ((_parametros.Tsb * Math.Pow(_parametros.Tsh, 3)) / 12.0));
             label78.Text = string.Format(CultureInfo.InvariantCulture, "Deflexão máxima na travessa superior: {0:F3}cm", U);
 
             if (elu1 <= 100 &&
