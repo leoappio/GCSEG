@@ -247,7 +247,7 @@ namespace GCSEG
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(label10);
-            groupBox2.Location = new Point(6, 22);
+            groupBox2.Location = new Point(432, 13);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(407, 136);
             groupBox2.TabIndex = 1;
@@ -295,7 +295,7 @@ namespace GCSEG
             groupBox3.Controls.Add(label16);
             groupBox3.Controls.Add(label15);
             groupBox3.Controls.Add(label14);
-            groupBox3.Location = new Point(6, 350);
+            groupBox3.Location = new Point(432, 338);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(407, 172);
             groupBox3.TabIndex = 2;
@@ -507,8 +507,10 @@ namespace GCSEG
             // 
             // tabPage3
             // 
-            tabPage3.Controls.Add(groupBox13);
+            tabPage3.Controls.Add(groupBox3);
             tabPage3.Controls.Add(groupBox12);
+            tabPage3.Controls.Add(groupBox2);
+            tabPage3.Controls.Add(groupBox9);
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
@@ -532,9 +534,9 @@ namespace GCSEG
             groupBox13.Controls.Add(label48);
             groupBox13.Controls.Add(label49);
             groupBox13.Controls.Add(label50);
-            groupBox13.Location = new Point(473, 13);
+            groupBox13.Location = new Point(21, 22);
             groupBox13.Name = "groupBox13";
-            groupBox13.Size = new Size(374, 506);
+            groupBox13.Size = new Size(374, 500);
             groupBox13.TabIndex = 10;
             groupBox13.TabStop = false;
             groupBox13.Text = "Tensões solicitantes de cálculo";
@@ -768,11 +770,9 @@ namespace GCSEG
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(groupBox13);
             tabPage2.Controls.Add(groupBox10);
-            tabPage2.Controls.Add(groupBox3);
             tabPage2.Controls.Add(groupBox11);
-            tabPage2.Controls.Add(groupBox9);
-            tabPage2.Controls.Add(groupBox2);
             tabPage2.Controls.Add(groupBox4);
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
@@ -846,7 +846,7 @@ namespace GCSEG
             groupBox9.Controls.Add(label18);
             groupBox9.Controls.Add(label19);
             groupBox9.Controls.Add(label20);
-            groupBox9.Location = new Point(6, 164);
+            groupBox9.Location = new Point(432, 155);
             groupBox9.Name = "groupBox9";
             groupBox9.Size = new Size(407, 171);
             groupBox9.TabIndex = 4;
@@ -1485,7 +1485,7 @@ namespace GCSEG
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(961, 602);
+            ClientSize = new Size(961, 601);
             Controls.Add(tabControl1);
             Name = "Form2";
             Text = "GC-SEG - Resultados";

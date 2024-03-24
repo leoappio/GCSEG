@@ -18,6 +18,8 @@ namespace GCSEG
             [Description("Font of the text on ProgressBar"), Category("Additional Options")]
             public Font TextFont { get; set; } = new Font(FontFamily.GenericSerif, 11, FontStyle.Bold | FontStyle.Italic);
 
+            public int TotalValue = 0;
+
             private SolidBrush _textColourBrush = (SolidBrush)Brushes.Black;
             [Category("Additional Options")]
             public Color TextColor
@@ -106,13 +108,13 @@ namespace GCSEG
                 set { }
             }
 
-            private string _percentageStr { get { return $"{(int)((float)Value - Minimum) / ((float)Maximum - Minimum) * 100} %"; } }
+            private string _percentageStr { get { return $"{(int)(((float)TotalValue - Minimum) / ((float)Maximum - Minimum) * 100)} %"; } }
 
             private string _currProgressStr
             {
                 get
                 {
-                    return $"{Value}/{Maximum}";
+                    return TotalValue > 100 ? $"100/{Maximum} " : $"{TotalValue}/{Maximum}";
                 }
             }
 
@@ -144,9 +146,9 @@ namespace GCSEG
 
                 rect.Inflate(-3, -3);
 
-                if (Value > 0)
+                if (TotalValue > 0)
                 {
-                    Rectangle clip = new Rectangle(rect.X, rect.Y, (int)Math.Round(((float)Value / Maximum) * rect.Width), rect.Height);
+                    Rectangle clip = new Rectangle(rect.X, rect.Y, (int)Math.Round(((float)TotalValue / Maximum) * rect.Width), rect.Height);
 
                     g.FillRectangle(_progressColourBrush, clip);
                 }

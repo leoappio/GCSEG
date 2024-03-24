@@ -624,7 +624,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label34.Location = new Point(6, 122);
+            label34.Location = new Point(8, 153);
             label34.Name = "label34";
             label34.Size = new Size(229, 20);
             label34.TabIndex = 4;
@@ -634,7 +634,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label33.Location = new Point(6, 157);
+            label33.Location = new Point(6, 122);
             label33.Name = "label33";
             label33.Size = new Size(246, 20);
             label33.TabIndex = 3;
@@ -644,7 +644,7 @@
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label32.Location = new Point(6, 89);
+            label32.Location = new Point(6, 91);
             label32.Name = "label32";
             label32.Size = new Size(253, 20);
             label32.TabIndex = 2;
@@ -654,7 +654,7 @@
             // 
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label31.Location = new Point(6, 57);
+            label31.Location = new Point(6, 62);
             label31.Name = "label31";
             label31.Size = new Size(252, 20);
             label31.TabIndex = 1;
@@ -664,7 +664,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label30.Location = new Point(6, 27);
+            label30.Location = new Point(7, 33);
             label30.Name = "label30";
             label30.Size = new Size(231, 20);
             label30.TabIndex = 0;
@@ -818,9 +818,9 @@
             label57.AutoSize = true;
             label57.Location = new Point(18, 135);
             label57.Name = "label57";
-            label57.Size = new Size(284, 20);
+            label57.Size = new Size(291, 20);
             label57.TabIndex = 4;
-            label57.Text = "Comprimento total a ser protegido em m";
+            label57.Text = "Comprimento total a ser protegido em cm";
             // 
             // textBox5
             // 

@@ -141,48 +141,48 @@ namespace GCSEG
 
             label54.Text = $"Compressão na travessa superior ";
             var elu1 = (int)(-Tcts / fcod * 100);
-            progressBar1.Value = elu1;
+            progressBar1.TotalValue = elu1;
             label55.Text = $"Tração na travessa superior";
             var elu2 = (int)((Ttts / ftod) * 100);
-            textProgressBar1.Value = elu2;
+            textProgressBar1.TotalValue = elu2;
             label56.Text = $"Cisalhamento na travessa superior";
             var elu3 = (int)((Tvts / fvd) * 100);
-            textProgressBar2.Value = elu3;
+            textProgressBar2.TotalValue = elu3;
 
 
             label59.Text = $"Compressão na travessa média";
             var elu4 = (int)((-Tctm / fcod) * 100);
-            textProgressBar3.Value = elu4;
+            textProgressBar3.TotalValue = elu4;
             label58.Text = $"Tração na travessa média";
             var elu5 = (int)((Tttm / ftod) * 100);
-            textProgressBar4.Value = elu5;
+            textProgressBar4.TotalValue = elu5;
             label57.Text = $"Cisalhamento na travessa média";
             var elu6 = (int)((Tvtm / fvd) * 100);
-            textProgressBar5.Value = elu6;
+            textProgressBar5.TotalValue = elu6;
 
             label62.Text = $"Compressão no rodapé";
             var elu7 = (int)((-Tcr / fcod) * 100);
-            textProgressBar6.Value = elu7;
+            textProgressBar6.TotalValue = elu7;
             label61.Text = $"Tração no rodapé";
             var elu8 = (int)((Ttr / ftod) * 100);
-            textProgressBar7.Value = elu8;
+            textProgressBar7.TotalValue = elu8;
             label60.Text = $"Cisalhamento no rodapé";
             var elu9 = (int)((Tvr / fvd) * 100);
-            textProgressBar8.Value = elu9;
+            textProgressBar8.TotalValue = elu9;
 
             label65.Text = $"Compressão no montante";
             var elu10 = (int)((-Tcmo / fcod) * 100);
-            textProgressBar9.Value = elu10;
+            textProgressBar9.TotalValue = elu10;
             label64.Text = $"Tração no montante";
             var elu11 = (int)((Ttmo / ftod) * 100);
-            textProgressBar10.Value = elu11;
+            textProgressBar10.TotalValue = elu11;
             label63.Text = $"Cisalhamento no montante";
             var elu12 = (int)((Tvmo / fvd) * 100);
-            textProgressBar11.Value = elu12;
+            textProgressBar11.TotalValue = elu12;
 
             label66.Text = $"Tração na mão francesa";
             var elu13 = (int)((Ttmf / ftod) * 100);
-            textProgressBar12.Value = elu13;
+            textProgressBar12.TotalValue = elu13;
 
 
             //Tab5
