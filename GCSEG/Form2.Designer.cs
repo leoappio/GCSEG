@@ -63,6 +63,23 @@ namespace GCSEG
             groupBox5 = new GroupBox();
             label1 = new Label();
             tabPage3 = new TabPage();
+            groupBox12 = new GroupBox();
+            label36 = new Label();
+            label37 = new Label();
+            label38 = new Label();
+            label39 = new Label();
+            label40 = new Label();
+            label35 = new Label();
+            label34 = new Label();
+            label33 = new Label();
+            label32 = new Label();
+            label31 = new Label();
+            groupBox9 = new GroupBox();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            tabPage2 = new TabPage();
             groupBox13 = new GroupBox();
             label51 = new Label();
             label52 = new Label();
@@ -77,29 +94,12 @@ namespace GCSEG
             label48 = new Label();
             label49 = new Label();
             label50 = new Label();
-            groupBox12 = new GroupBox();
-            label36 = new Label();
-            label37 = new Label();
-            label38 = new Label();
-            label39 = new Label();
-            label40 = new Label();
-            label35 = new Label();
-            label34 = new Label();
-            label33 = new Label();
-            label32 = new Label();
-            label31 = new Label();
-            tabPage2 = new TabPage();
             groupBox10 = new GroupBox();
             label29 = new Label();
             label30 = new Label();
             groupBox11 = new GroupBox();
             label27 = new Label();
             label28 = new Label();
-            groupBox9 = new GroupBox();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label20 = new Label();
             tabPage4 = new TabPage();
             groupBox14 = new GroupBox();
             textProgressBar12 = new TextProgressBar();
@@ -148,13 +148,10 @@ namespace GCSEG
             label80 = new Label();
             label81 = new Label();
             tabPage7 = new TabPage();
-            label86 = new Label();
-            label85 = new Label();
-            label84 = new Label();
-            label83 = new Label();
-            label82 = new Label();
-            label74 = new Label();
-            label73 = new Label();
+            dataGridView1 = new DataGridView();
+            Elementos = new DataGridViewTextBoxColumn();
+            Especificação = new DataGridViewTextBoxColumn();
+            Quantidade = new DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -166,12 +163,12 @@ namespace GCSEG
             groupBox6.SuspendLayout();
             groupBox5.SuspendLayout();
             tabPage3.SuspendLayout();
-            groupBox13.SuspendLayout();
             groupBox12.SuspendLayout();
+            groupBox9.SuspendLayout();
             tabPage2.SuspendLayout();
+            groupBox13.SuspendLayout();
             groupBox10.SuspendLayout();
             groupBox11.SuspendLayout();
-            groupBox9.SuspendLayout();
             tabPage4.SuspendLayout();
             groupBox14.SuspendLayout();
             tabPage5.SuspendLayout();
@@ -180,6 +177,7 @@ namespace GCSEG
             groupBox16.SuspendLayout();
             groupBox17.SuspendLayout();
             tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -519,6 +517,178 @@ namespace GCSEG
             tabPage3.Text = "Geometria";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // groupBox12
+            // 
+            groupBox12.Controls.Add(label36);
+            groupBox12.Controls.Add(label37);
+            groupBox12.Controls.Add(label38);
+            groupBox12.Controls.Add(label39);
+            groupBox12.Controls.Add(label40);
+            groupBox12.Controls.Add(label35);
+            groupBox12.Controls.Add(label34);
+            groupBox12.Controls.Add(label33);
+            groupBox12.Controls.Add(label32);
+            groupBox12.Controls.Add(label31);
+            groupBox12.Location = new Point(6, 13);
+            groupBox12.Name = "groupBox12";
+            groupBox12.Size = new Size(374, 506);
+            groupBox12.TabIndex = 0;
+            groupBox12.TabStop = false;
+            groupBox12.Text = "Parâmetros geométricos";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Location = new Point(6, 457);
+            label36.Name = "label36";
+            label36.Size = new Size(58, 20);
+            label36.TabIndex = 9;
+            label36.Text = "label36";
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Location = new Point(6, 411);
+            label37.Name = "label37";
+            label37.Size = new Size(58, 20);
+            label37.TabIndex = 8;
+            label37.Text = "label37";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Location = new Point(6, 369);
+            label38.Name = "label38";
+            label38.Size = new Size(58, 20);
+            label38.TabIndex = 7;
+            label38.Text = "label38";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Location = new Point(6, 325);
+            label39.Name = "label39";
+            label39.Size = new Size(58, 20);
+            label39.TabIndex = 6;
+            label39.Text = "label39";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Location = new Point(6, 282);
+            label40.Name = "label40";
+            label40.Size = new Size(58, 20);
+            label40.TabIndex = 5;
+            label40.Text = "label40";
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Location = new Point(6, 209);
+            label35.Name = "label35";
+            label35.Size = new Size(58, 20);
+            label35.TabIndex = 4;
+            label35.Text = "label35";
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Location = new Point(6, 163);
+            label34.Name = "label34";
+            label34.Size = new Size(58, 20);
+            label34.TabIndex = 3;
+            label34.Text = "label34";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Location = new Point(6, 121);
+            label33.Name = "label33";
+            label33.Size = new Size(58, 20);
+            label33.TabIndex = 2;
+            label33.Text = "label33";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Location = new Point(6, 77);
+            label32.Name = "label32";
+            label32.Size = new Size(58, 20);
+            label32.TabIndex = 1;
+            label32.Text = "label32";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Location = new Point(6, 34);
+            label31.Name = "label31";
+            label31.Size = new Size(58, 20);
+            label31.TabIndex = 0;
+            label31.Text = "label31";
+            // 
+            // groupBox9
+            // 
+            groupBox9.Controls.Add(label17);
+            groupBox9.Controls.Add(label18);
+            groupBox9.Controls.Add(label19);
+            groupBox9.Controls.Add(label20);
+            groupBox9.Location = new Point(432, 155);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Size = new Size(407, 171);
+            groupBox9.TabIndex = 4;
+            groupBox9.TabStop = false;
+            groupBox9.Text = "Geometria do guarda-corpo";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(6, 138);
+            label17.Name = "label17";
+            label17.Size = new Size(58, 20);
+            label17.TabIndex = 3;
+            label17.Text = "label17";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(6, 100);
+            label18.Name = "label18";
+            label18.Size = new Size(276, 20);
+            label18.TabIndex = 2;
+            label18.Text = "Altura no rodapé segundo NR-18: 15 cm";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(6, 64);
+            label19.Name = "label19";
+            label19.Size = new Size(327, 20);
+            label19.TabIndex = 1;
+            label19.Text = "Altura da travessa media segundo NR-18: 70 cm";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(6, 32);
+            label20.Name = "label20";
+            label20.Size = new Size(347, 20);
+            label20.TabIndex = 0;
+            label20.Text = "Altura da travessa superior segundo NR-18: 120 cm";
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(groupBox13);
+            tabPage2.Controls.Add(groupBox10);
+            tabPage2.Controls.Add(groupBox11);
+            tabPage2.Controls.Add(groupBox4);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(915, 545);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Esforços";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
             // groupBox13
             // 
             groupBox13.Controls.Add(label51);
@@ -659,129 +829,6 @@ namespace GCSEG
             label50.TabIndex = 0;
             label50.Text = "label50";
             // 
-            // groupBox12
-            // 
-            groupBox12.Controls.Add(label36);
-            groupBox12.Controls.Add(label37);
-            groupBox12.Controls.Add(label38);
-            groupBox12.Controls.Add(label39);
-            groupBox12.Controls.Add(label40);
-            groupBox12.Controls.Add(label35);
-            groupBox12.Controls.Add(label34);
-            groupBox12.Controls.Add(label33);
-            groupBox12.Controls.Add(label32);
-            groupBox12.Controls.Add(label31);
-            groupBox12.Location = new Point(6, 13);
-            groupBox12.Name = "groupBox12";
-            groupBox12.Size = new Size(374, 506);
-            groupBox12.TabIndex = 0;
-            groupBox12.TabStop = false;
-            groupBox12.Text = "Parâmetros geométricos";
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.Location = new Point(6, 457);
-            label36.Name = "label36";
-            label36.Size = new Size(58, 20);
-            label36.TabIndex = 9;
-            label36.Text = "label36";
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Location = new Point(6, 411);
-            label37.Name = "label37";
-            label37.Size = new Size(58, 20);
-            label37.TabIndex = 8;
-            label37.Text = "label37";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Location = new Point(6, 369);
-            label38.Name = "label38";
-            label38.Size = new Size(58, 20);
-            label38.TabIndex = 7;
-            label38.Text = "label38";
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.Location = new Point(6, 325);
-            label39.Name = "label39";
-            label39.Size = new Size(58, 20);
-            label39.TabIndex = 6;
-            label39.Text = "label39";
-            // 
-            // label40
-            // 
-            label40.AutoSize = true;
-            label40.Location = new Point(6, 282);
-            label40.Name = "label40";
-            label40.Size = new Size(58, 20);
-            label40.TabIndex = 5;
-            label40.Text = "label40";
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Location = new Point(6, 209);
-            label35.Name = "label35";
-            label35.Size = new Size(58, 20);
-            label35.TabIndex = 4;
-            label35.Text = "label35";
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.Location = new Point(6, 163);
-            label34.Name = "label34";
-            label34.Size = new Size(58, 20);
-            label34.TabIndex = 3;
-            label34.Text = "label34";
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Location = new Point(6, 121);
-            label33.Name = "label33";
-            label33.Size = new Size(58, 20);
-            label33.TabIndex = 2;
-            label33.Text = "label33";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Location = new Point(6, 77);
-            label32.Name = "label32";
-            label32.Size = new Size(58, 20);
-            label32.TabIndex = 1;
-            label32.Text = "label32";
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Location = new Point(6, 34);
-            label31.Name = "label31";
-            label31.Size = new Size(58, 20);
-            label31.TabIndex = 0;
-            label31.Text = "label31";
-            // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(groupBox13);
-            tabPage2.Controls.Add(groupBox10);
-            tabPage2.Controls.Add(groupBox11);
-            tabPage2.Controls.Add(groupBox4);
-            tabPage2.Location = new Point(4, 29);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(915, 545);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Esforços";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
             // groupBox10
             // 
             groupBox10.Controls.Add(label29);
@@ -839,55 +886,6 @@ namespace GCSEG
             label28.Size = new Size(58, 20);
             label28.TabIndex = 0;
             label28.Text = "label28";
-            // 
-            // groupBox9
-            // 
-            groupBox9.Controls.Add(label17);
-            groupBox9.Controls.Add(label18);
-            groupBox9.Controls.Add(label19);
-            groupBox9.Controls.Add(label20);
-            groupBox9.Location = new Point(432, 155);
-            groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(407, 171);
-            groupBox9.TabIndex = 4;
-            groupBox9.TabStop = false;
-            groupBox9.Text = "Geometria do guarda-corpo";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(6, 138);
-            label17.Name = "label17";
-            label17.Size = new Size(58, 20);
-            label17.TabIndex = 3;
-            label17.Text = "label17";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new Point(6, 100);
-            label18.Name = "label18";
-            label18.Size = new Size(276, 20);
-            label18.TabIndex = 2;
-            label18.Text = "Altura no rodapé segundo NR-18: 15 cm";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Location = new Point(6, 64);
-            label19.Name = "label19";
-            label19.Size = new Size(327, 20);
-            label19.TabIndex = 1;
-            label19.Text = "Altura da travessa media segundo NR-18: 70 cm";
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Location = new Point(6, 32);
-            label20.Name = "label20";
-            label20.Size = new Size(347, 20);
-            label20.TabIndex = 0;
-            label20.Text = "Altura da travessa superior segundo NR-18: 120 cm";
             // 
             // tabPage4
             // 
@@ -1403,13 +1401,7 @@ namespace GCSEG
             // 
             // tabPage7
             // 
-            tabPage7.Controls.Add(label86);
-            tabPage7.Controls.Add(label85);
-            tabPage7.Controls.Add(label84);
-            tabPage7.Controls.Add(label83);
-            tabPage7.Controls.Add(label82);
-            tabPage7.Controls.Add(label74);
-            tabPage7.Controls.Add(label73);
+            tabPage7.Controls.Add(dataGridView1);
             tabPage7.Location = new Point(4, 29);
             tabPage7.Name = "tabPage7";
             tabPage7.Padding = new Padding(3);
@@ -1418,68 +1410,36 @@ namespace GCSEG
             tabPage7.Text = "Quantitativo";
             tabPage7.UseVisualStyleBackColor = true;
             // 
-            // label86
+            // dataGridView1
             // 
-            label86.AutoSize = true;
-            label86.Location = new Point(26, 356);
-            label86.Name = "label86";
-            label86.Size = new Size(58, 20);
-            label86.TabIndex = 6;
-            label86.Text = "label86";
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Elementos, Especificação, Quantidade });
+            dataGridView1.Location = new Point(6, 30);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(756, 324);
+            dataGridView1.TabIndex = 7;
             // 
-            // label85
+            // Elementos
             // 
-            label85.AutoSize = true;
-            label85.Location = new Point(26, 299);
-            label85.Name = "label85";
-            label85.Size = new Size(58, 20);
-            label85.TabIndex = 5;
-            label85.Text = "label85";
+            Elementos.HeaderText = "Elementos";
+            Elementos.Name = "Elementos";
+            Elementos.ReadOnly = true;
             // 
-            // label84
+            // Especificação
             // 
-            label84.AutoSize = true;
-            label84.Location = new Point(26, 246);
-            label84.Name = "label84";
-            label84.Size = new Size(58, 20);
-            label84.TabIndex = 4;
-            label84.Text = "label84";
+            Especificação.HeaderText = "Especificação";
+            Especificação.Name = "Especificação";
+            Especificação.ReadOnly = true;
             // 
-            // label83
+            // Quantidade
             // 
-            label83.AutoSize = true;
-            label83.Location = new Point(26, 191);
-            label83.Name = "label83";
-            label83.Size = new Size(58, 20);
-            label83.TabIndex = 3;
-            label83.Text = "label83";
-            // 
-            // label82
-            // 
-            label82.AutoSize = true;
-            label82.Location = new Point(26, 134);
-            label82.Name = "label82";
-            label82.Size = new Size(58, 20);
-            label82.TabIndex = 2;
-            label82.Text = "label82";
-            // 
-            // label74
-            // 
-            label74.AutoSize = true;
-            label74.Location = new Point(26, 81);
-            label74.Name = "label74";
-            label74.Size = new Size(58, 20);
-            label74.TabIndex = 1;
-            label74.Text = "label74";
-            // 
-            // label73
-            // 
-            label73.AutoSize = true;
-            label73.Location = new Point(26, 30);
-            label73.Name = "label73";
-            label73.Size = new Size(58, 20);
-            label73.TabIndex = 0;
-            label73.Text = "label73";
+            Quantidade.HeaderText = "Quantidade";
+            Quantidade.Name = "Quantidade";
+            Quantidade.ReadOnly = true;
             // 
             // Form2
             // 
@@ -1509,17 +1469,17 @@ namespace GCSEG
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
             tabPage3.ResumeLayout(false);
-            groupBox13.ResumeLayout(false);
-            groupBox13.PerformLayout();
             groupBox12.ResumeLayout(false);
             groupBox12.PerformLayout();
+            groupBox9.ResumeLayout(false);
+            groupBox9.PerformLayout();
             tabPage2.ResumeLayout(false);
+            groupBox13.ResumeLayout(false);
+            groupBox13.PerformLayout();
             groupBox10.ResumeLayout(false);
             groupBox10.PerformLayout();
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();
-            groupBox9.ResumeLayout(false);
-            groupBox9.PerformLayout();
             tabPage4.ResumeLayout(false);
             groupBox14.ResumeLayout(false);
             groupBox14.PerformLayout();
@@ -1532,7 +1492,7 @@ namespace GCSEG
             groupBox17.ResumeLayout(false);
             groupBox17.PerformLayout();
             tabPage7.ResumeLayout(false);
-            tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -1653,15 +1613,12 @@ namespace GCSEG
         private TextProgressBar textProgressBar2;
         private TextProgressBar textProgressBar1;
         private TabPage tabPage7;
-        private Label label86;
-        private Label label85;
-        private Label label84;
-        private Label label83;
-        private Label label82;
-        private Label label74;
-        private Label label73;
         private GroupBox groupBox17;
         private Button button1;
         private Label label72;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Elementos;
+        private DataGridViewTextBoxColumn Especificação;
+        private DataGridViewTextBoxColumn Quantidade;
     }
 }

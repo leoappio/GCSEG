@@ -9,6 +9,15 @@ namespace GCSEG
         {
             InitializeComponent();
             _parametros = parametros;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dataGridView1.Rows.Add("Travessa superior", $"Madeira {_parametros.ClasseMadeira} - {_parametros.Tsb.ToString("F2", CultureInfo.InvariantCulture)} X {_parametros.Tsh.ToString("F2", CultureInfo.InvariantCulture)} cm", $"{(_parametros.ComprimentoTotal / 100.0).ToString("F2", CultureInfo.InvariantCulture)} metros");
+            dataGridView1.Rows.Add("Travessa média", $"Madeira {_parametros.ClasseMadeira} - {_parametros.Tmb.ToString("F2", CultureInfo.InvariantCulture)} X {_parametros.Tmh.ToString("F2", CultureInfo.InvariantCulture)} cm", $"{(_parametros.ComprimentoTotal / 100.0).ToString("F2", CultureInfo.InvariantCulture)} metros");
+            dataGridView1.Rows.Add("Rodapé", $"Madeira {_parametros.ClasseMadeira} - {_parametros.Trb.ToString("F2", CultureInfo.InvariantCulture)} X {_parametros.Trh.ToString("F2", CultureInfo.InvariantCulture)} cm", $"{(_parametros.ComprimentoTotal / 100.0).ToString("F2", CultureInfo.InvariantCulture)} metros");
+            dataGridView1.Rows.Add("Montantes", $"Madeira {_parametros.ClasseMadeira} - {_parametros.Mb.ToString("F2", CultureInfo.InvariantCulture)} X {_parametros.Mh.ToString("F2", CultureInfo.InvariantCulture)} cm", $"{(((_parametros.ComprimentoTotal / _parametros.L) + 1) * 1.20).ToString("F2", CultureInfo.InvariantCulture)} metros");
+            dataGridView1.Rows.Add("Mão francesa", $"Madeira {_parametros.ClasseMadeira} - {_parametros.Mfb.ToString("F2", CultureInfo.InvariantCulture)} X {_parametros.Mfh.ToString("F2", CultureInfo.InvariantCulture)} cm", $"{(Math.Sqrt(Math.Pow(_parametros.Dn / 100.0, 2) + 1.44) * ((_parametros.ComprimentoTotal / _parametros.L) + 1.0)).ToString("F2", CultureInfo.InvariantCulture)} metros");
+            dataGridView1.Rows.Add("Base de apoio", $"Madeira {_parametros.ClasseMadeira} - {_parametros.Tsb.ToString("F2", CultureInfo.InvariantCulture)} X {_parametros.Tsh.ToString("F2", CultureInfo.InvariantCulture)} cm", $"{((_parametros.Dn / 100.0) * ((_parametros.ComprimentoTotal / _parametros.L) + 1)).ToString("F2", CultureInfo.InvariantCulture)} metros");
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -232,7 +241,7 @@ namespace GCSEG
 
             double Acone = tu / (0.055 * _parametros.Fck);
 
-            double Lc = Math.Sqrt(Acone / 3.14);
+            double Lc = Math.Sqrt(Acone / Math.PI);
 
             double Dch = 1.5 * Lc;
 
@@ -248,14 +257,9 @@ namespace GCSEG
             label68.Text = string.Format(CultureInfo.InvariantCulture, "Comprimento de ancoragem mínimo: {0:F2}cm", Lc);
             label67.Text = string.Format(CultureInfo.InvariantCulture, "Espaçamento mínimo entre chumbadores: {0:F2}cm", Dch);
 
-            // Para Tab7
-            label73.Text = string.Format(CultureInfo.InvariantCulture, "Consumo de madeira travessa superior: {0:F2} metros de madeira {1:F2}X{2:F2}", _parametros.ComprimentoTotal, _parametros.Tsb, _parametros.Tsh);
-            label74.Text = string.Format(CultureInfo.InvariantCulture, "Consumo de madeira travessa media: {0:F2} metros de madeira {1:F2}X{2:F2}", _parametros.ComprimentoTotal, _parametros.Tmb, _parametros.Tmh);
-            label82.Text = string.Format(CultureInfo.InvariantCulture, "Consumo de madeira rodapé: {0:F2} metros de madeira {1:F2}X{2:F2}", _parametros.ComprimentoTotal, _parametros.Trb, _parametros.Trh);
-            label83.Text = string.Format(CultureInfo.InvariantCulture, "Consumo de madeira montantes: {0:F2} metros de madeira {1:F2}X{2:F2}", ((_parametros.ComprimentoTotal / _parametros.L) + 2) * 1.20, _parametros.Mb, _parametros.Mh);
-            label84.Text = string.Format(CultureInfo.InvariantCulture, "Consumo de mãos francesas: {0:F2} metros de madeira {1:F2} X {2:F2}", ((_parametros.ComprimentoTotal / _parametros.L) + 2) * (1.20 / Math.Sin(An)), _parametros.Mfb, _parametros.Mfh);
-            label85.Text = string.Format(CultureInfo.InvariantCulture, "Consumo de chumbadores: {0:F0} unidades", Math.Ceiling(((_parametros.ComprimentoTotal / _parametros.L) + 2) * _parametros.Nch));
-            label86.Text = string.Format(CultureInfo.InvariantCulture, "Consumo de pregos: {0:F0} unidades", Math.Ceiling(((_parametros.ComprimentoTotal / _parametros.L) + 2) * 13));
+            dataGridView1.Rows.Add("Chumbador",
+                $"{Math.Max(dc, dt).ToString("F2", CultureInfo.InvariantCulture)} X {(Lc + _parametros.Mh + 3).ToString("F2", CultureInfo.InvariantCulture)} cm",
+                $"{Math.Ceiling(_parametros.Nch * ((_parametros.ComprimentoTotal / _parametros.L) + 1))} unidades");
         }
 
         private void groupBox5_Enter(object sender, EventArgs e)
