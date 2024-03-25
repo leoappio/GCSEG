@@ -39,21 +39,21 @@ namespace GCSEG
 
 
             //Tab 2
-            var fcod = ((Kmod * _parametros.Fcok / 10) / gamac);
-            var ftod = ((Kmod * _parametros.Ftok / 10) / gamat);
-            var fvd = ((Kmod * _parametros.Fvk / 10) / gamav);
-            var Eef = ((_parametros.E / 10) * Kmod);
+            var fcod = ((Kmod * _parametros.Fcok / 10.0) / gamac);
+            var ftod = ((Kmod * _parametros.Ftok / 10.0) / gamat);
+            var fvd = ((Kmod * _parametros.Fvk / 10.0) / gamav);
+            var Eef = ((_parametros.E / 10.0) * Kmod);
 
-            var Vts = (0.009 * _parametros.L) / 2;
-            var Vtm = (0.0066 * _parametros.L) / 2;
-            var Vr = (0.0022 * _parametros.L) / 2;
+            var Vts = (0.009 * _parametros.L) / 2.0;
+            var Vtm = (0.0066 * _parametros.L) / 2.0;
+            var Vr = (0.0022 * _parametros.L) / 2.0;
 
             var Mts = (0.009 * Math.Pow(_parametros.L, 2)) / 8.0;
             var Mtm = (0.0066 * Math.Pow(_parametros.L, 2)) / 8.0;
-            var Mr = (0.0022 * Math.Pow(_parametros.L, 2)) / 8;
+            var Mr = (0.0022 * Math.Pow(_parametros.L, 2)) / 8.0;
 
-            var Vm = Math.Abs(-(0.93333 * Vr) - (0.44445 * Vtm));
-            var Mm = Math.Abs(+(55 * Vr) - (Vm * 62.5));
+            var Vm = Vtm + Vr;
+            var Mm = (Vtm * _parametros.L) / 8;
             var va = Math.Abs((0.0667 * Vr) + (0.55555 * Vtm) + (Vts));
 
             double constante = (_parametros.Dn / 112.5);
