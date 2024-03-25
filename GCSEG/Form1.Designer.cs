@@ -135,6 +135,8 @@
             Pbasm = new DataGridViewTextBoxColumn();
             Paparente = new DataGridViewTextBoxColumn();
             tabControl1 = new TabControl();
+            tabPage6 = new TabPage();
+            label58 = new Label();
             tabPage2.SuspendLayout();
             groupBox7.SuspendLayout();
             groupBox6.SuspendLayout();
@@ -157,6 +159,7 @@
             tabPage5.SuspendLayout();
             groupBox14.SuspendLayout();
             tabControl1.SuspendLayout();
+            tabPage6.SuspendLayout();
             SuspendLayout();
             // 
             // tabPage2
@@ -1172,12 +1175,34 @@
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage6);
             tabControl1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(1097, 612);
             tabControl1.TabIndex = 0;
+            // 
+            // tabPage6
+            // 
+            tabPage6.Controls.Add(label58);
+            tabPage6.Location = new Point(4, 30);
+            tabPage6.Name = "tabPage6";
+            tabPage6.Padding = new Padding(3);
+            tabPage6.Size = new Size(1089, 578);
+            tabPage6.TabIndex = 2;
+            tabPage6.Text = "Sobre";
+            tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label58
+            // 
+            label58.AutoSize = true;
+            label58.Location = new Point(177, 99);
+            label58.Name = "label58";
+            label58.Size = new Size(692, 315);
+            label58.TabIndex = 0;
+            label58.Text = resources.GetString("label58.Text");
+            label58.TextAlign = ContentAlignment.TopCenter;
             // 
             // Form1
             // 
@@ -1223,6 +1248,8 @@
             groupBox14.ResumeLayout(false);
             groupBox14.PerformLayout();
             tabControl1.ResumeLayout(false);
+            tabPage6.ResumeLayout(false);
+            tabPage6.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1334,5 +1361,7 @@
         private DataGridViewTextBoxColumn Paparente;
         private TextBox textBox19;
         private Label label57;
+        private TabPage tabPage6;
+        private Label label58;
     }
 }

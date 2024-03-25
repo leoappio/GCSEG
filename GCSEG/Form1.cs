@@ -153,7 +153,8 @@ namespace GCSEG
                     valores.Pa = 1000;
                     break;
                 default:
-                    throw new ArgumentException("Tipo de madeira não reconhecido.");
+                    MessageBox.Show("Por favor, preencha todos os campos.");
+                    break;
             }
 
             valores.Ftok = valores.Fcok / 0.77;
